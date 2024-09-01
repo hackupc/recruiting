@@ -9,12 +9,18 @@ import {
   MobileBreakpoint,
   MobileTitleL,
   MobileTitleM,
+  Primary100,
   Primary300,
+  Primary400,
   Primary500,
+  Secondary100,
+  Secondary300,
+  Secondary500,
   SpacingL,
   SpacingM,
   SpacingS,
   SpacingXL,
+  SpacingXS,
   TitleL,
   TitleXL,
 } from "@/app/genericComponents/tokens";
@@ -107,5 +113,60 @@ export const CardWithBackground = styled.h2`
 
   @media (max-width: ${MobileBreakpoint}) {
     padding: ${SpacingS};
+  }
+`;
+
+interface ButtonProps {
+  width?: string;
+  disabled?: boolean;
+}
+
+const ButtonBasic = styled.a<ButtonProps>`
+  padding: ${SpacingS} ${SpacingL};
+  border-radius: ${SpacingXS};
+  text-align: center;
+  text-transform: uppercase;
+  font-size: ${BodyText};
+  width: ${(props) => props.width || "fit-content"};
+  margin-top: ${SpacingS};
+  cursor: ${(props) => props.disabled && "not-allowed"};
+
+  @media (max-width: ${MobileBreakpoint}) {
+    padding: ${SpacingS};
+    width: 100%;
+  }
+`;
+
+export const PrimaryButton = styled(ButtonBasic)`
+  border: none;
+  background-color: ${(props) => (props.disabled ? Primary100 : Primary300)};
+  color: ${(props) => (props.disabled ? "gray" : "white")};
+
+  &:hover {
+    background-color: ${(props) => !props.disabled && Primary100};
+    font-weight: ${(props) => !props.disabled && "bold"};
+  }
+  &:active {
+    background-color: ${(props) => !props.disabled && Primary500};
+    color: ${(props) => !props.disabled && "white"};
+  }
+`;
+
+export const SecondaryButton = styled(ButtonBasic)`
+  border: none;
+  padding: ${SpacingS} ${SpacingM};
+  background-color: ${(props) =>
+    props.disabled ? Secondary100 : Secondary300};
+  color: ${(props) => (props.disabled ? "gray" : "white")};
+  font-size: ${BodyTextMedium};
+  text-transform: initial;
+
+  &:hover {
+    background-color: ${(props) => !props.disabled && Secondary100};
+    font-weight: ${(props) => !props.disabled && "bold"};
+  }
+  &:active {
+    background-color: ${(props) => !props.disabled && Secondary500};
+    color: ${(props) => !props.disabled && "white"};
   }
 `;

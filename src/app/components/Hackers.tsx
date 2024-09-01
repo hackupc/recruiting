@@ -1,5 +1,7 @@
 import {
   CardWithBackground,
+  PrimaryButton,
+  SecondaryButton,
   SectionContainer,
   SectionDescription,
   SectionTitle,
@@ -10,6 +12,7 @@ import {
   BodyTextMedium,
   MobileBreakpoint,
   SpacingM,
+  SpacingXS,
 } from "@/app/genericComponents/tokens";
 
 const LogoAndDescription = styled.div`
@@ -46,6 +49,10 @@ const CardsForHackers = styled(CardWithBackground)`
   }
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+`;
+
 export default function Hackers() {
   return (
     <SectionContainer>
@@ -55,6 +62,9 @@ export default function Hackers() {
         <LogoHackers src={"/hackersatupcLogo.svg"} />
         <CardsForHackers>
           <Description>{hackers_data.description}</Description>
+          <ButtonContainer>
+            <SecondaryButton>{hackers_data.buttonText}</SecondaryButton>
+          </ButtonContainer>
         </CardsForHackers>
       </LogoAndDescription>
     </SectionContainer>
