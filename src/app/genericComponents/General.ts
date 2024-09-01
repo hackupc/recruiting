@@ -124,6 +124,7 @@ const ButtonBasic = styled.a<ButtonProps>`
   padding: ${SpacingS} ${SpacingL};
   border-radius: ${SpacingXS};
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: ${BodyText};
   width: ${(props) => props.width || "fit-content"};
