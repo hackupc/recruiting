@@ -44,10 +44,7 @@ export default function Hero() {
       <Title>{hero_data.title}</Title>
       <ButtonContainer>
         {hero_data.applicationsOpen ? (
-          <PrimaryButton
-            href={"https://hackersatupc.typeform.com/to/wTMkorGB"}
-            target={"_blank"}
-          >
+          <PrimaryButton href={hero_data.applicationsLink} target={"_blank"}>
             {hero_data.applicationsOpenTextButton}
           </PrimaryButton>
         ) : (

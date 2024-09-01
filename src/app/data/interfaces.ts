@@ -4,6 +4,7 @@ export interface HeroInformation {
   title: string;
   applicationsOpenTextButton: string;
   applicationsClosedTextButton: string;
+  applicationsLink: string;
   applicationsOpen: boolean;
 }
 
