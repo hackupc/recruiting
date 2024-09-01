@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {
   BodyTextMedium,
   Primary100,
-  Primary300,
   Primary500,
   SpacingM,
   SpacingS,

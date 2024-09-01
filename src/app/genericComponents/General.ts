@@ -11,7 +11,6 @@ import {
   MobileTitleM,
   Primary100,
   Primary300,
-  Primary400,
   Primary500,
   Secondary100,
   Secondary300,
