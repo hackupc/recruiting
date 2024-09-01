@@ -36,6 +36,8 @@ export const Neutral300: string = "#88A7B7";
 export const Neutral200: string = "#EAF7FF";
 export const Neutral100: string = "#F9FDFF";
 
+export const BackgroundAccent: string = "#1f2424";
+
 // Responsive breakpoints
 export const MobilePixels: number = 640;
 export const MobileBreakpoint: string = MobilePixels + "px";

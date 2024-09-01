@@ -18,9 +18,21 @@ export interface AboutJoiningInformation {
   images: ImageInformation[];
 }
 
-export interface TalkInformation {
+export interface VideoCardInformation {
   enabled: boolean;
   title: string;
   description: string;
-  video?: string;
+  video: string;
+}
+
+export interface DepartmentInformation {
+  name: string;
+  question: string;
+  information: string;
+}
+
+export interface Departments {
+  title: string;
+  description: string;
+  departments: DepartmentInformation[];
 }
