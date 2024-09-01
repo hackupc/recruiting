@@ -170,19 +170,3 @@ export const SecondaryButtonSmall = styled(ButtonBasic)`
     color: ${(props) => !props.disabled && "white"};
   }
 `;
-
-export const SecondaryButton = styled(ButtonBasic)`
-  border: none;
-  background-color: ${(props) =>
-    props.disabled ? Secondary100 : Secondary300};
-  color: ${(props) => (props.disabled ? "gray" : "white")};
-
-  &:hover {
-    background-color: ${(props) => !props.disabled && Secondary100};
-    font-weight: ${(props) => !props.disabled && "bold"};
-  }
-  &:active {
-    background-color: ${(props) => !props.disabled && Secondary500};
-    color: ${(props) => !props.disabled && "white"};
-  }
-`;

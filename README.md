@@ -12,7 +12,7 @@ This landing page have 4 sections apart from the hero and the footer. The sectio
 
 In this section you can find all the data in the `src/app/data/cards_data.ts` file, you can change the data in this file to change the information in the landing page.
 
-Also in this sections there are videos and photos, that can be found in the `public` folder. It's necessary to add the photo if it's added as a photo or video in the data file.
+Also in these sections there are videos and photos, that can be found in the `public` folder. It's necessary to add the photo if it's added as a photo or video in the data file. Photos should be added in the `public/photos` folder and in ratio 1:1, and videos in the `public/videos` folder.
 
 ### Departments section
 
@@ -28,7 +28,7 @@ In this section you can find all the data in the `src/app/data/socials_data.ts` 
 
 In this section you will see we are using the `font-awesome` icons, you can find all the icons in the [font-awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2) website.
 
-----
+---
 
 ## How to set up the project
 
@@ -36,7 +36,6 @@ In this section you will see we are using the `font-awesome` icons, you can find
 
 - Install [Node.js](https://nodejs.org/en/download/) (v20.9.0 or newer) in your computer.
 - Have a text editor or IDE installed, like [Visual Studio Code](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/).
-
 
 ### Installation
 
@@ -63,7 +62,6 @@ In this section you will see we are using the `font-awesome` icons, you can find
 2. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 > The page auto-updates as you edit the file. If it's not working maybe you need to check your configurations, it's for sure working in Chrome (mac and windows) and mozilla (linux)
-
 
 ## Linting and formatting
 

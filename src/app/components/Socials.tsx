@@ -6,20 +6,30 @@ import {
 import { socials_data } from "@data/socials_data";
 import styled from "styled-components";
 import {
-  Secondary300,
+  Secondary100,
+  Secondary500,
   SpacingM,
   SpacingS,
+  SpacingXS,
   TitleM,
 } from "@/app/genericComponents/tokens";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-const HeaderSocials = styled.p`
+const HeaderSocials = styled.a`
   font-size: ${TitleM};
   font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  color: ${Secondary300};
+  text-decoration: none;
+  color: ${Secondary100};
   margin-top: ${SpacingM};
+  margin-bottom: ${SpacingXS};
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    color: ${Secondary500};
+  }
 `;
 
 const SocialsDescription = styled(SectionDescription)`
@@ -49,7 +59,14 @@ export default function Socials() {
     <SectionContainer>
       <SectionTitle>{socials_data.title}</SectionTitle>
       <SocialsDescription>{socials_data.description}</SocialsDescription>
-      <HeaderSocials>HackUPC</HeaderSocials>
+      <HeaderSocials href={"https://hackupc.com/"} target={"_blank"}>
+        HackUPC
+        <FontAwesomeIcon
+          icon={faUpRightFromSquare}
+          size={"2xs"}
+          style={{ marginLeft: "8px" }}
+        />
+      </HeaderSocials>
       <SocialsList>
         {socials_data.socialsHackUPC.map((social) => (
           <SocialItem key={social.label}>
@@ -64,7 +81,14 @@ export default function Socials() {
           </SocialItem>
         ))}
       </SocialsList>
-      <HeaderSocials>HackersatUPC</HeaderSocials>
+      <HeaderSocials href={"https://hackersatupc.org/"} target={"_blank"}>
+        Hackers@UPC{" "}
+        <FontAwesomeIcon
+          icon={faUpRightFromSquare}
+          size={"2xs"}
+          style={{ marginLeft: "8px" }}
+        />
+      </HeaderSocials>
       <SocialsList>
         {socials_data.socialsHackersUPC.map((social) => (
           <SocialItem key={social.label}>
