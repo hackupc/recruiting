@@ -5,11 +5,17 @@ export interface HeroInformation {
   applicationsOpen: boolean;
 }
 
+export type ImageInformation = {
+  index: number;
+  url: string;
+  alt: string;
+};
+
 export interface AboutJoiningInformation {
   enabled: boolean;
   title: string;
   description: string;
-  images?: string[];
+  images: ImageInformation[];
 }
 
 export interface TalkInformation {
