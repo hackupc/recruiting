@@ -4,6 +4,7 @@ import {
   MobileTitleXL,
   SpacingL,
   SpacingM,
+  SpacingXL,
   SpacingXXL,
   TitleXL,
 } from "@/app/genericComponents/tokens";
@@ -16,6 +17,7 @@ const Container = styled.div`
   background-image: url("/hackupcLogo.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 
   @media (max-width: ${MobileBreakpoint}) {
     padding: ${SpacingM};
