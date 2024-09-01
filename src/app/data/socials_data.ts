@@ -85,7 +85,8 @@ const listSocialsHackersUPC: SocialsItem[] = [
 
 export const socials_data: Socials = {
   title: "Stay tuned and don't miss a bit!",
-  description: "If you have any doubt or question don't hesitate to reach out",
+  description:
+    "If you have any doubt or question, don't hesitate to reach out in any of our social networks.",
   socialsHackUPC: listSocialsHackUPC,
   socialsHackersUPC: listSocialsHackersUPC,
 };
