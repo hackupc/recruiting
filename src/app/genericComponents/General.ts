@@ -27,6 +27,13 @@ export const Background = styled.div`
   background: ${BackgroundAccent};
 `;
 
+export const TransparentBackground = styled.div`
+  margin: 0;
+  padding: ${SpacingXL} ${SpacingM};
+  width: 100%;
+  height: 100%;
+`;
+
 export const CardWithBorder = styled.div`
   margin: 0 auto;
   padding: ${SpacingL};
@@ -95,12 +102,10 @@ export const SectionDescription = styled.p`
 
 export const CardWithBackground = styled.h2`
   background: ${Primary500};
-  border-radius: ${SpacingM};
-  padding: ${SpacingS} ${SpacingM};
-  width: 45%;
+  border-radius: ${SpacingS};
+  padding: ${SpacingS};
 
   @media (max-width: ${MobileBreakpoint}) {
-    width: 100%;
     padding: ${SpacingS};
   }
 `;

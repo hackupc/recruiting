@@ -4,7 +4,12 @@ import JoinHackers from "@components/JoinHackers";
 import Talk from "@components/Talk";
 import Trailer from "@components/Trailer";
 import Departments from "@components/Departments";
-import { Background } from "@/app/genericComponents/General";
+import {
+  Background,
+  TransparentBackground,
+} from "@/app/genericComponents/General";
+import Hackers from "@components/Hackers";
+import Socials from "@components/Socials";
 
 export default function HomePage() {
   return (
@@ -15,6 +20,12 @@ export default function HomePage() {
       <Trailer />
       <Background>
         <Departments />
+      </Background>
+      <TransparentBackground>
+        <Hackers />
+      </TransparentBackground>
+      <Background>
+        <Socials />
       </Background>
     </main>
   );

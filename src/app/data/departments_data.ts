@@ -1,4 +1,6 @@
-const departments_list_data = [
+import { DepartmentInformation, Departments } from "@data/interfaces";
+
+const departments_list_data: DepartmentInformation[] = [
   {
     name: "Design",
     question:
@@ -50,7 +52,7 @@ const departments_list_data = [
   },
 ];
 
-export const departments_data = {
+export const departments_data: Departments = {
   title: "Our Departments",
   description:
     "At HackUPC, we are structured by departments. Each department has a specific role in the development of the event, and being part of a department doesn't mean that you need to be involved only in that department.",

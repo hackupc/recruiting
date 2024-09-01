@@ -4,9 +4,9 @@ import { DepartmentInformation } from "@data/interfaces";
 import {
   BodyText,
   BodyTextMedium,
+  MobileBreakpoint,
   Primary100,
   Primary200,
-  SpacingM,
   SpacingS,
   SpacingXS,
   TitleS,
@@ -56,7 +56,7 @@ const Answer = styled.p<{ isVisible: boolean }>`
 `;
 
 const QuestionBox = styled.div`
-  border-radius: ${SpacingM};
+  border-radius: ${SpacingS};
   background-color: ${Primary200};
   padding: ${SpacingS};
 
@@ -65,12 +65,20 @@ const QuestionBox = styled.div`
   }
 `;
 
+const CardForDepartment = styled(CardWithBackground)`
+  width: 45%;
+
+  @media (max-width: ${MobileBreakpoint}) {
+    width: 100%;
+  }
+`;
+
 export default function DepartmentInfoCard(props: DepartmentInformation) {
   const { name, question, information } = props;
   const [active, setActive] = useState<boolean>(false);
 
   return (
-    <CardWithBackground>
+    <CardForDepartment>
       <DepartmentCardTitle>{name}</DepartmentCardTitle>
       <QuestionBox onClick={() => setActive(!active)}>
         <Question>
@@ -82,6 +90,6 @@ export default function DepartmentInfoCard(props: DepartmentInformation) {
         </Question>
         <Answer isVisible={active}>{information}</Answer>
       </QuestionBox>
-    </CardWithBackground>
+    </CardForDepartment>
   );
 }
