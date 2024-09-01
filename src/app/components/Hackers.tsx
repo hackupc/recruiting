@@ -12,6 +12,8 @@ import {
   MobileBreakpoint,
   SpacingM,
 } from "@/app/genericComponents/tokens";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const LogoAndDescription = styled.div`
   display: flex;
@@ -61,8 +63,15 @@ export default function Hackers() {
         <CardsForHackers>
           <Description>{hackers_data.description}</Description>
           <ButtonContainer>
-            <SecondaryButtonSmall>
+            <SecondaryButtonSmall
+              href={"https://hackersatupc.org/"}
+              target={"_blank"}
+            >
               {hackers_data.buttonText}
+              <FontAwesomeIcon
+                icon={faUpRightFromSquare}
+                style={{ marginLeft: "16px" }}
+              />
             </SecondaryButtonSmall>
           </ButtonContainer>
         </CardsForHackers>

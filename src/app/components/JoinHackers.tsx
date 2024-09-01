@@ -9,7 +9,7 @@ import EmblaCarousel from "@/app/genericComponents/EmblaCarousel";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { EmblaOptionsType } from "embla-carousel";
 
-const OPTIONS: EmblaOptionsType = {};
+const OPTIONS: EmblaOptionsType = { loop: true };
 
 export default function JoinHackers() {
   return (
