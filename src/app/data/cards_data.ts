@@ -12,22 +12,87 @@ export const about_joining_data_card: AboutJoiningInformation = {
     {
       index: 1,
       url: "/photosCarousel/Photo1.jpg",
-      alt: "Equip2019",
+      alt: "Photo1",
     },
     {
       index: 2,
-      url: "/photosCarousel/Photo7.jpg",
-      alt: "Retreat2019-2",
+      url: "/photosCarousel/Photo2.jpg",
+      alt: "Photo2",
     },
     {
       index: 3,
-      url: "/photosCarousel/Photo8.jpg",
-      alt: "Retreat2019",
+      url: "/photosCarousel/Photo3.jpg",
+      alt: "Photo3",
     },
     {
       index: 4,
+      url: "/photosCarousel/Photo4.jpg",
+      alt: "Photo4",
+    },
+    {
+      index: 5,
+      url: "/photosCarousel/Photo5.jpg",
+      alt: "Photo5",
+    },
+    {
+      index: 6,
+      url: "/photosCarousel/Photo6.jpg",
+      alt: "Photo6",
+    },
+    {
+      index: 7,
+      url: "/photosCarousel/Photo7.jpg",
+      alt: "Photo7",
+    },
+    {
+      index: 8,
+      url: "/photosCarousel/Photo8.jpg",
+      alt: "Photo8",
+    },
+    {
+      index: 9,
       url: "/photosCarousel/Photo9.jpg",
-      alt: "Opening2021",
+      alt: "Photo9",
+    },
+    {
+      index: 10,
+      url: "/photosCarousel/Photo10.jpg",
+      alt: "Photo10",
+    },
+    {
+      index: 11,
+      url: "/photosCarousel/Photo11.jpg",
+      alt: "Photo11",
+    },
+    {
+      index: 12,
+      url: "/photosCarousel/Photo12.jpg",
+      alt: "Photo12",
+    },
+    {
+      index: 13,
+      url: "/photosCarousel/Photo13.jpg",
+      alt: "Photo13",
+    },
+    {
+      index: 14,
+      url: "/photosCarousel/Photo14.jpg",
+      alt: "Photo14",
+    },
+    {
+      index: 15,
+      url: "/photosCarousel/Photo15.jpg",
+      alt: "Photo15",
+    },
+    {
+      index: 16,
+      url: "/photosCarousel/Photo16.jpg",
+      alt: "Photo16",
+    },
+    {
+      index: 17,
+      url: "/photosCarousel/Photo17.jpg",
+      alt: "Photo17",
     },
   ],
 };
