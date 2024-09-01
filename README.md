@@ -1,7 +1,34 @@
 [![NPM 10.2.5](https://img.shields.io/badge/npm-10.1.0-blue.svg)](https://www.npmjs.com/package/npm/v/10.1.0)
 [![Node.js 20.9.0](https://img.shields.io/badge/node-20.9.0-green.svg)](https://nodejs.org/en/download/releases/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3632907-0263-42e7-892e-a00568e0f729/deploy-status)](https://app.netlify.com/sites/recruiting-hackupc/deploys)
 
 > Welcome to Hackers@UPC recruiting landing page source code, made in [Next.js](https://nextjs.org/).
+
+## Change information in the landing page easily
+
+This landing page have 4 sections apart from the hero and the footer. The sections are:
+
+### Cards section
+
+In this section you can find all the data in the `src/app/data/cards_data.ts` file, you can change the data in this file to change the information in the landing page.
+
+Also in this sections there are videos and photos, that can be found in the `public` folder. It's necessary to add the photo if it's added as a photo or video in the data file.
+
+### Departments section
+
+In this section you can find all the data in the `src/app/data/departments_data.ts` file, you can change the data in this file to change the information in the landing page.
+
+### Hackers@UPC section
+
+In this section you can find all the data in the `src/app/data/hackers_data.ts` file, you can change the data in this file to change the information in the landing page.
+
+### Socials section
+
+In this section you can find all the data in the `src/app/data/socials_data.ts` file, you can change the data in this file to change the information in the landing page.
+
+In this section you will see we are using the `font-awesome` icons, you can find all the icons in the [font-awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2) website.
+
+----
 
 ## How to set up the project
 
