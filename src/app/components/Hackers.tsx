@@ -1,7 +1,6 @@
 import {
   CardWithBackground,
-  PrimaryButton,
-  SecondaryButton,
+  SecondaryButtonSmall,
   SectionContainer,
   SectionDescription,
   SectionTitle,
@@ -12,7 +11,6 @@ import {
   BodyTextMedium,
   MobileBreakpoint,
   SpacingM,
-  SpacingXS,
 } from "@/app/genericComponents/tokens";
 
 const LogoAndDescription = styled.div`
@@ -63,7 +61,9 @@ export default function Hackers() {
         <CardsForHackers>
           <Description>{hackers_data.description}</Description>
           <ButtonContainer>
-            <SecondaryButton>{hackers_data.buttonText}</SecondaryButton>
+            <SecondaryButtonSmall>
+              {hackers_data.buttonText}
+            </SecondaryButtonSmall>
           </ButtonContainer>
         </CardsForHackers>
       </LogoAndDescription>

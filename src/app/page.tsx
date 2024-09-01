@@ -10,6 +10,7 @@ import {
 } from "@/app/genericComponents/General";
 import Hackers from "@components/Hackers";
 import Socials from "@components/Socials";
+import Footer from "@components/Footer";
 
 export default function HomePage() {
   return (
@@ -27,6 +28,7 @@ export default function HomePage() {
       <Background>
         <Socials />
       </Background>
+      <Footer />
     </main>
   );
 }

@@ -129,7 +129,7 @@ const ButtonBasic = styled.a<ButtonProps>`
   font-size: ${BodyText};
   width: ${(props) => props.width || "fit-content"};
   margin-top: ${SpacingS};
-  cursor: ${(props) => props.disabled && "not-allowed"};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
 
   @media (max-width: ${MobileBreakpoint}) {
     padding: ${SpacingS};
@@ -152,7 +152,7 @@ export const PrimaryButton = styled(ButtonBasic)`
   }
 `;
 
-export const SecondaryButton = styled(ButtonBasic)`
+export const SecondaryButtonSmall = styled(ButtonBasic)`
   border: none;
   padding: ${SpacingS} ${SpacingM};
   background-color: ${(props) =>
@@ -160,6 +160,22 @@ export const SecondaryButton = styled(ButtonBasic)`
   color: ${(props) => (props.disabled ? "gray" : "white")};
   font-size: ${BodyTextMedium};
   text-transform: initial;
+
+  &:hover {
+    background-color: ${(props) => !props.disabled && Secondary100};
+    font-weight: ${(props) => !props.disabled && "bold"};
+  }
+  &:active {
+    background-color: ${(props) => !props.disabled && Secondary500};
+    color: ${(props) => !props.disabled && "white"};
+  }
+`;
+
+export const SecondaryButton = styled(ButtonBasic)`
+  border: none;
+  background-color: ${(props) =>
+    props.disabled ? Secondary100 : Secondary300};
+  color: ${(props) => (props.disabled ? "gray" : "white")};
 
   &:hover {
     background-color: ${(props) => !props.disabled && Secondary100};

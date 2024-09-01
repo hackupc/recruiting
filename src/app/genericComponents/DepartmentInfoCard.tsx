@@ -59,6 +59,7 @@ const QuestionBox = styled.div`
   border-radius: ${SpacingS};
   background-color: ${Primary200};
   padding: ${SpacingS};
+  cursor: pointer;
 
   &:hover {
     background-color: ${Primary100};
