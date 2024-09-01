@@ -59,7 +59,7 @@ export default function Hackers() {
       <SectionTitle>{hackers_data.title}</SectionTitle>
       <SectionDescription>{hackers_data.subtitle}</SectionDescription>
       <LogoAndDescription>
-        <LogoHackers src={"/hackersatupcLogo.svg"} />
+        <LogoHackers src={"/hackersatupcLogo.svg"} alt={"logoHackers"} />
         <CardsForHackers>
           <Description>{hackers_data.description}</Description>
           <ButtonContainer>

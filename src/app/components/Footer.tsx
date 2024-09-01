@@ -2,8 +2,8 @@ import { SectionContainer } from "@/app/genericComponents/General";
 import styled from "styled-components";
 import {
   BodyTextMedium,
-  Primary100,
-  Primary500,
+  Secondary100,
+  Secondary500,
   SpacingM,
   SpacingS,
   SpacingXS,
@@ -16,13 +16,13 @@ const FooterContainer = styled(SectionContainer)`
 `;
 
 const LinkText = styled.a`
-  color: ${Primary100};
+  color: ${Secondary100};
   text-decoration: none;
   font-size: ${BodyTextMedium};
   margin: 0 ${SpacingXS};
 
   &:hover {
-    color: ${Primary500};
+    color: ${Secondary500};
     cursor: pointer;
   }
 `;
