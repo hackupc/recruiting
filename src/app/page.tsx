@@ -10,10 +10,19 @@ import Socials from "@components/Socials";
 import Footer from "@components/Footer";
 import PresentationCards from "@components/PresentationCards";
 import styled from "styled-components";
-import { SpacingS } from "@/app/genericComponents/tokens";
+import {
+  MobileBreakpoint,
+  SpacingM,
+  SpacingS,
+} from "@/app/genericComponents/tokens";
 
 const FirstBackground = styled(TransparentBackground)`
   padding-top: ${SpacingS};
+
+  @media (max-width: ${MobileBreakpoint}) {
+    padding-top: ${SpacingS};
+    padding: ${SpacingM};
+  }
 `;
 
 export default function HomePage() {

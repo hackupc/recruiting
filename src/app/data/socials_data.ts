@@ -84,9 +84,9 @@ const listSocialsHackersUPC: SocialsItem[] = [
 ];
 
 export const socials_data: Socials = {
-  title: "Stay tuned and don't miss a bit!",
+  title: "Estigues atent i no et perdis res!",
   description:
-    "If you have any doubt or question, don't hesitate to reach out in any of our social networks.",
+    "Si tens qualsevol dubte o pregunta, contacta amb nosaltres a través de qualsevol xarxa social!",
   socialsHackUPC: listSocialsHackUPC,
   socialsHackersUPC: listSocialsHackersUPC,
 };

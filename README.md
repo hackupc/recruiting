@@ -1,8 +1,11 @@
 [![NPM 10.2.5](https://img.shields.io/badge/npm-10.1.0-blue.svg)](https://www.npmjs.com/package/npm/v/10.1.0)
 [![Node.js 20.9.0](https://img.shields.io/badge/node-20.9.0-green.svg)](https://nodejs.org/en/download/releases/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c3632907-0263-42e7-892e-a00568e0f729/deploy-status)](https://app.netlify.com/sites/recruiting-hackupc/deploys)
+[![](https://github.com/hackupc/recruiting/actions/workflows/recruiting_ci.yml/badge.svg)](https://github.com/hackupc/recruiting/actions/workflows/recruiting_ci.yml)
 
 > Welcome to Hackers@UPC recruiting landing page source code, made in [Next.js](https://nextjs.org/).
+
+> This website is in Catalan due the main target audience is the UPC students.
 
 ## Change information in the landing page easily
 
