@@ -24,19 +24,19 @@ import {
   TitleXL,
 } from "@/app/genericComponents/tokens";
 
-export const Background = styled.div`
-  margin: 0;
-  padding: ${SpacingXL} ${SpacingM};
-  width: 100%;
-  height: 100%;
-  background: ${BackgroundAccent};
-`;
-
 export const TransparentBackground = styled.div`
   margin: 0;
   padding: ${SpacingXL} ${SpacingM};
   width: 100%;
   height: 100%;
+
+  @media (max-width: ${MobileBreakpoint}) {
+    padding: ${SpacingM};
+  }
+`;
+
+export const Background = styled(TransparentBackground)`
+  background: ${BackgroundAccent};
 `;
 
 export const CardWithBorder = styled.div`
@@ -73,7 +73,7 @@ export const CardBody = styled.p`
 `;
 
 export const CardContainer = styled.div`
-  margin: ${SpacingM};
+  margin: ${SpacingM} 0;
 `;
 
 export const VideoContainer = styled.div`
