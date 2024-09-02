@@ -30,6 +30,7 @@ export interface VideoCardInformation {
 
 export interface DepartmentInformation {
   name: string;
+  iconName: IconDefinition;
   question: string;
   information: string;
 }

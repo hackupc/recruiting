@@ -75,7 +75,7 @@ const CardForDepartment = styled(CardWithBackground)`
 `;
 
 export default function DepartmentInfoCard(props: DepartmentInformation) {
-  const { name, question, information } = props;
+  const { name, question, information, iconName } = props;
   const [active, setActive] = useState<boolean>(false);
 
   return (
