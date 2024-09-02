@@ -18,7 +18,7 @@ const DepartmentsCards = styled.div`
 
 export default function Departments() {
   return (
-    <SectionContainer>
+    <SectionContainer id={"departments"}>
       <SectionTitle>{departments_data.title}</SectionTitle>
       <SectionDescription>{departments_data.description}</SectionDescription>
       <DepartmentsCards>

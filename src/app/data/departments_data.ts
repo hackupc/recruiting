@@ -4,57 +4,57 @@ const departments_list_data: DepartmentInformation[] = [
   {
     name: "Design",
     question:
-      "Do you draw or design for fun? Do you like to design awesome user experiences and themes?",
+      "Dibuixes o t’agrada dissenyar? T’agradaria participar dissenyant la temàtica dels esdeveniments?",
     information:
-      "For HackUPC, the design is really important because it is the way we have to communicate our work. It makes it possible to connect our events with our hackers, sponsors, and partners. Our job is to design everything related to the events of the association, including the most significant one, HackUPC. Websites, our social media image, stickers, t-shirts, event decoration, and much more is what we do at our team!",
+      "A HackUPC, el disseny és molt important perquè és la manera que tenim de comunicar i mostrar la nostra feina. Fa possible la connexió dels nostres esdeveniments amb Hackers, Sponsors i Partners. Com a membre de l’equip de disseny t'encarregaràs de treballar amb  tot el relacionat als diferents de l’associació, però sobretot el més important HackUPC. Pàgines web, material per xarxes socials, stickers, samarretes, decoració per l’esdeveniment… això i molt més és del que s’encarrega el nostre equip!",
   },
   {
     name: "Sponsorship",
     question:
-      "Are you persuasive and can both write and speak well in English? Come raise lots of money!",
+      "Ets persuasiu? Pots comunicar-te còmodament en Català i en Anglès? Vine a aconseguir diners!",
     information:
-      "Like any event, HackUPC needs a financial support, which is provided by the amazing sponsors that attend our event and present challenges for the hackers. They also usually provide you with cool stuff during the event, such as food, swag, and much more. Getting that budget is where the Sponsorship team comes into play! To be part of this team, you need to be willing to practice your English and be ready to have meetings with sponsors and negotiate with them.",
+      "Com qualsevol esdeveniment, HackUPC necessita un suport econòmic, aquest ve a través dels nostres increïbles sponsors que normalment venen a l'esdeveniment presentant un repte pels hackers. Normalment, aquests també porten coses increïbles durant l’esdeveniment, marxandatge, menjar i altres. Aconseguir els diners per poder cobrir totes les despeses que representa l’esdeveniment és la feina de l’equip de sponsorship. Per ser part d’aquest equip has d’estar disposat a parlar en anglès de forma regular i tenir reunions amb empreses on hauràs de negociar amb ells.",
   },
   {
     name: "HackerXperience",
     question:
-      "Do you want to improve the hackers' memory from HackUPC? Help us to create the best hacker experience!",
+      "Vols millorar els records que s’emporten els hackers de HackUPC? Ajuda’ns a crear la millor experiència que puguin tenir!",
     information:
-      "We want the hackers to have the best time possible at HackUPC! From the beginning until the end of the event, we plan fun activities, ensure fair judging criteria for the projects, look for mentors to helps the hackers, and much more! If you are creative and want to enhance the hackers' experience, join our team!",
+      "Volem que els hackers s’ho passin el millor possible a HackUPC! Des de l’inici al final de l’esdeveniment, planifiquem activitats, ens assegurem que hi ha un criteri just per avaluar tots els projectes, busquem mentors que ajudaran als hackers durant el cap de setmana, i molt més! Si ets creatiu i vols millorar l'experiència dels hackers, uneix-te a nosaltres!",
   },
   {
     name: "Logistics",
     question:
-      "Do you work well under pressure? Help us keep everything running really smoothly during the event!",
+      "Treballes bé sota pressió? Ajuda’ns a fer que tot funcioni bé durant l’esdeveniment!",
     information:
-      "During HackUPC, we deal with lots of logistic challenges: providing the hackers with food (a LOT) and swag, ensuring a place to work or to sleep in, setting up the cafeteria (so they can continue eating), looking for snack partners (to get more food), and much more. That's where our department comes in! We are in charge of managing all of those challenges and more. If you are active, comfortable with teamwork, and want to help us, the Logistics team is right for you!",
+      "Durant HackUPC, tenim molts reptes pel que fa a la logística: oferir menjar (MOLT) pels hackers i tots els assistents a l'esdeveniment, i no només menjar, també marxandatge, un lloc on treballar, on dormir… tota la venue! El repte més gran és la cafeteria (perquè puguin els hackers puguin menjar encara més), contactant amb partners i assegurant-nos de què tot està bé. Aquí és on entra l'equip de logistics, s’encarrega de resoldre i cobrir tots aquests reptes. Si ets una persona activa, estàs còmode treballant en equip i vols ser part d’aquesta bogeria, uneix-te a nosaltres!",
   },
   {
     name: "Marketing",
     question:
-      "Are you a Social Network genius? Do you want to help us create the biggest hacker network?",
+      "Tens facilitat per a les Xarxes Socials? Vols ajudar-nos a fer créixer la xarxa de hackers?",
     information:
-      "HackUPC wouldn't be possible without the hackers, so our job is to promote all of our association's events to everyone! We take charge of maintaining our social media active, creating content regularly, and answering all the questions or doubts that may arise. We need creative minds and people who are up-to-date with social media!",
+      "HackUPC no seria possible sense els hackers, la nostra feina és promocionar tots els esdeveniments que fa l’associació perquè arribi a tothom! Ens encarreguem de mantenir actives les xarxes socials, creant de forma regular contingut i resolent preguntes i dubtes que poden sorgir. Necessitem ments creatives que estiguin al dia de les xarxes socials.",
   },
   {
     name: "WebDev",
     question:
-      "Do you like to program and learn new skills? Come and help us to develop our apps!",
+      "T’agrada programar i aprendre noves habilitats? Vine i ajuda’ns a millorar els nostres sistemes!",
     information:
-      "HackUPC wouldn't be possible without our web pages and services. At WebDev, we develop and implement these websites to simplify work for hackers and organizers, and make the hackathon smoother. We use modern technologies such as Django, HTML & JS, Vue.js, as well as others. We are looking for people with basic programming knowledge and, above all, a strong will to learn new languages and technology.",
+      "HackUPC no seria possible sense les nostres pàgines web i sistemes informàtics. A WebDev, ens encarreguem de desenvolupar aquests sistemes web per millorar la feina dels organitzadors i hackers, i fer que la hackathon vagi millor. Utilitzem tecnologies modernes: Django (Python) i Next.js (Typescript) majoritàriament. Busquem a gent que tingui coneixements bàsics de programació i moltes ganes d’aprendre nous llenguatges i tecnologies.",
   },
   {
     name: "Staff",
     question:
-      "Can you boss around and make things happen? Be in charge of the volunteers team!",
+      "Ets capaç de liderar i assegurar que les coses passen? Estigues al capdavant de l’equip de voluntaris!",
     information:
-      "During HackUPC, we need extra hands to set up the venue and leave everything ready for the hackers, so our team's task is to recruit an amazing team of volunteers who come and help us do so. We coordinate and organize the volunteers to work efficiently, so if you are an organized person who can truly be a leader, this is the place for you!",
+      "Durant HackUPC, necessitem mans extres per tenir tot preparat pels hackers en tot moment, el nostre equip s’encarrega de reclutar un equip de voluntaris increïble que ens ajudaran. Coordinem i organitzem els voluntaris per treballar de forma eficient, així que si ets una persona organitzada que pot ser un bon líder, aquest és el teu equip!",
   },
 ];
 
 export const departments_data: Departments = {
-  title: "Our Departments",
+  title: "Els nostres departaments",
   description:
-    "At HackUPC, we are structured by departments. Each department has a specific role in the development of the event, and being part of a department doesn't mean that you need to be involved only in that department.",
+    "A HackUPC, l'organització va per departaments. Cada departament té un objectiu específic al desenvolupament de l’esdeveniment, però ser part d’un departament no significa que només podràs fer feina d’aquell departament. Treballem també de forma molt horitzontal!",
   departments: departments_list_data,
 };

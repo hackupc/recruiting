@@ -1,9 +1,9 @@
 import { HeroInformation } from "@data/interfaces";
 
 export const hero_data: HeroInformation = {
-  title: "Join the HackUPC team",
-  applicationsOpenTextButton: "Apply now!",
+  title: "Uneix-te a l'equip de HackUPC",
+  applicationsOpenTextButton: "Apunta’t ara!",
   applicationsLink: "https://hackersatupc.typeform.com/to/wTMkorGB",
-  applicationsClosedTextButton: "Applications closed",
+  applicationsClosedTextButton: "Les inscripcions estàn tancades",
   applicationsOpen: true,
 };

@@ -4,6 +4,8 @@
 
 > Welcome to Hackers@UPC recruiting landing page source code, made in [Next.js](https://nextjs.org/).
 
+> This website is in Catalan due the main target audience is the UPC students.
+
 ## Change information in the landing page easily
 
 This landing page have 4 sections apart from the hero and the footer. The sections are:
