@@ -1,12 +1,10 @@
 import { Hackers } from "@data/interfaces";
 
 export const hackers_data: Hackers = {
-  title: "The association \n behind HackUPC",
+  title: "L’associació darrere de HackUPC",
   subtitle:
-    "Hackers@UPC is a non-profit student organization at Universitat Politècnica de Catalunya.",
+    "Hackers@UPC és una organització sense ànim de lucre de la Universitat Politècnica de Catalunya.",
   description:
-    "Aside from HackUPC, at Hackers@UPC, we organize many events during the year, nationally and internationally, to promote science and technology among students and create a great community in the technological world.\n" +
-    "\n" +
-    "Our mission is to foster learning, designing and building to turn student's ideas into reality! Check it all out on our web pages.",
-  buttonText: "Learn more about",
+    "A part de HackUPC, a Hackers@UPC, organitzem molts esdeveniments durant tot l’any, nacionalment o internacionalment, per promoure la ciència i la tecnologia als estudiants, i crear una comunitat al món de la tecnologia. La nostra missió és fomentar l’aprenentatge, el disseny i la construcció d'una comunitat d’estudiants que puguin les idees a la realitat!",
+  buttonText: "Descobreix més a la nostra pàgina web",
 };
