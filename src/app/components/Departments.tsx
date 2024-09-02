@@ -28,6 +28,7 @@ export default function Departments() {
             name={department.name}
             question={department.question}
             information={department.information}
+            icon={department.icon}
           />
         ))}
       </DepartmentsCards>

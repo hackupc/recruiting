@@ -75,12 +75,20 @@ const CardForDepartment = styled(CardWithBackground)`
 `;
 
 export default function DepartmentInfoCard(props: DepartmentInformation) {
-  const { name, question, information } = props;
+  const { name, question, information, icon } = props;
   const [active, setActive] = useState<boolean>(false);
 
   return (
     <CardForDepartment>
-      <DepartmentCardTitle>{name}</DepartmentCardTitle>
+      <DepartmentCardTitle>
+        <FontAwesomeIcon
+          icon={icon}
+          size="lg"
+          style={{ marginRight: "16px" }}
+        />{" "}
+        {name}
+      </DepartmentCardTitle>
+
       <QuestionBox onClick={() => setActive(!active)}>
         <Question>
           <p>{question}</p>
