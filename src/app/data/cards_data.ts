@@ -126,7 +126,7 @@ export const about_joining_data_card: AboutJoiningInformation = {
   enabled: true,
   title: "Per què hauria d’apuntar-me a Hackers@UPC?",
   description:
-    "Ser part de l’equip de Hackers@UPC et donarà moltes experiències així com t'enfrontaràs a nous reptes. Tindràs l'oportunitat de conèixer i treballar amb equip de gent apassionada, aprendràs noves habilitats i ajudaràs a fer créixer la comunitat a través de l'organització d’esdeveniments increïbles que apropen a la gent! Ser part d’una associació universitària com Hackers@UPC et farà viure la teva vida universitària d’una forma més divertida.",
+    "Ser part de l’equip de Hackers@UPC et donarà moltes experiències i et permetrà enfrontar-te a nous reptes. Tindràs l'oportunitat de conèixer i treballar amb un equip de gent apassionada, aprendràs noves habilitats i ajudaràs a fer créixer la comunitat a través de l'organització d’esdeveniments increïbles que apropen a la gent! Ser part d’una associació universitària com Hackers@UPC et farà viure la teva vida universitària d’una forma més divertida.",
   images: images_for_joining,
 };
 

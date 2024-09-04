@@ -39,7 +39,7 @@ const departments_list_data: DepartmentInformation[] = [
     question:
       "Treballes bé sota pressió? Ajuda’ns a fer que tot funcioni bé durant l’esdeveniment!",
     information:
-      "Durant HackUPC, tenim molts reptes pel que fa a la logística: oferir menjar (MOLT) pels hackers i tots els assistents a l'esdeveniment, i no només menjar, també marxandatge, un lloc on treballar, on dormir… tota la venue! El repte més gran és la cafeteria (perquè puguin els hackers puguin menjar encara més), contactant amb partners i assegurant-nos de què tot està bé. Aquí és on entra l'equip de logistics, s’encarrega de resoldre i cobrir tots aquests reptes. Si ets una persona activa, estàs còmode treballant en equip i vols ser part d’aquesta bogeria, uneix-te a nosaltres!",
+      "Durant HackUPC, tenim molts reptes pel que fa a la logística: oferir menjar (MOLT) pels hackers i tots els assistents a l'esdeveniment, i no només menjar, també marxandatge, un lloc on treballar, on dormir… tota la venue! El repte més gran és organitzar la cafeteria (perquè els hackers puguin menjar encara més), contactant amb partners i assegurant-nos de què tot està bé. Aquí és on entra l'equip de logistics, s’encarrega de resoldre i cobrir tots aquests reptes. Si ets una persona activa, estàs còmode treballant en equip i vols ser part d’aquesta bogeria, uneix-te a nosaltres!",
     icon: faPizzaSlice,
   },
   {
@@ -63,7 +63,7 @@ const departments_list_data: DepartmentInformation[] = [
     question:
       "Ets capaç de liderar i assegurar que les coses passen? Estigues al capdavant de l’equip de voluntaris!",
     information:
-      "Durant HackUPC, necessitem mans extres per tenir tot preparat pels hackers en tot moment, el nostre equip s’encarrega de reclutar un equip de voluntaris increïble que ens ajudaran. Coordinem i organitzem els voluntaris per treballar de forma eficient, així que si ets una persona organitzada que pot ser un bon líder, aquest és el teu equip!",
+      "Durant HackUPC, necessitem mans extres per tenir tot preparat pels hackers en tot moment, el nostre equip s’encarrega de reclutar un equip de voluntaris increïble que ens ajudarà. Coordinem i organitzem els voluntaris per treballar de forma eficient, així que si ets una persona organitzada que pot ser un bon líder, aquest és el teu equip!",
     icon: faPeopleGroup,
   },
 ];
