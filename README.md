@@ -7,6 +7,18 @@
 
 > This website is in Catalan due the main target audience is the UPC students.
 
+## Procedure to open or close applications
+
+### Open applications
+
+Go to the file `src/app/data/hero_data.ts` and change two parameters:
+- **applicationsLink** should be the link to the new typeform for the current edition.
+- **applicationsOpen** should be **true**.
+
+### Close applications
+
+Go to the file `src/app/data/hero_data.ts` and change the parameter **applicationsOpen** to **false**.
+
 ## Change information in the landing page easily
 
 This landing page have 4 sections apart from the hero and the footer. The sections are:
