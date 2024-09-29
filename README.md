@@ -12,6 +12,7 @@
 ### Open applications
 
 Go to the file `src/app/data/hero_data.ts` and change two parameters:
+
 - **applicationsLink** should be the link to the new typeform for the current edition.
 - **applicationsOpen** should be **true**.
 
