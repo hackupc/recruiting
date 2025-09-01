@@ -36,7 +36,7 @@ export const TransparentBackground = styled.div`
 `;
 
 export const Background = styled(TransparentBackground)`
-  background: ${BackgroundAccent};
+  background: #1d1e3b;
 `;
 
 export const CardWithBorder = styled.div`

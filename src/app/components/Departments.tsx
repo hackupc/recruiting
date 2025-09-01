@@ -5,8 +5,9 @@ import {
 } from "@/app/genericComponents/General";
 import { departments_data } from "@data/departments_data";
 import DepartmentInfoCard from "@/app/genericComponents/DepartmentInfoCard";
-import styled from "styled-components";
+import styled from "styled-components"; 
 import { SpacingM } from "@/app/genericComponents/tokens";
+
 
 const DepartmentsCards = styled.div`
   display: flex;
@@ -15,6 +16,7 @@ const DepartmentsCards = styled.div`
   gap: ${SpacingM};
   margin-top: ${SpacingM};
 `;
+
 
 export default function Departments() {
   return (

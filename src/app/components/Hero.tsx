@@ -6,27 +6,49 @@ import {
   SpacingM,
   SpacingXXL,
   TitleXL,
+  Primary300,
 } from "@/app/genericComponents/tokens";
 import { hero_data } from "@data/hero_data";
 import { PrimaryButton } from "@/app/genericComponents/General";
 
 const Container = styled.div`
-  margin: ${SpacingL} auto;
+  position: relative;
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
   padding: ${SpacingXXL};
-  background-image: url("/hackupcLogo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  border-radius: 20px;
+  border: 0.3333rem solid ${Primary300};
+  overflow: hidden;
 
   @media (max-width: ${MobileBreakpoint}) {
     padding: ${SpacingM};
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/IMG_6219.jpeg");
+    background-position: center 60%; 
+    background-size: cover; 
+    opacity: 0.3; 
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
 `;
+
 
 const Title = styled.h1`
   text-align: center;
   font-size: ${TitleXL};
   background: transparent;
+  color: #fff; 
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0);
 
   @media (max-width: ${MobileBreakpoint}) {
     font-size: ${MobileTitleXL};
@@ -37,6 +59,7 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: ${SpacingM};
+
 `;
 
 export default function Hero() {

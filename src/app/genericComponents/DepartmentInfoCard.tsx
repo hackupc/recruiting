@@ -57,7 +57,7 @@ const Answer = styled.p<{ isVisible: boolean }>`
 
 const QuestionBox = styled.div`
   border-radius: ${SpacingS};
-  background-color: ${Primary200};
+  background-color: #304697;
   padding: ${SpacingS};
   cursor: pointer;
 
