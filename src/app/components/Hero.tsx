@@ -45,7 +45,7 @@ const Title = styled.h1`
   text-align: center;
   font-size: ${TitleXL};
   background: transparent;
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0);
 
   @media (max-width: ${MobileBreakpoint}) {
