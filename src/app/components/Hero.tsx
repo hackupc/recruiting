@@ -2,7 +2,6 @@ import styled from "styled-components";
 import {
   MobileBreakpoint,
   MobileTitleXL,
-  SpacingL,
   SpacingM,
   SpacingXXL,
   TitleXL,
@@ -30,9 +29,9 @@ const Container = styled.div`
     position: absolute;
     inset: 0;
     background-image: url("/IMG_6219.jpeg");
-    background-position: center 60%; 
-    background-size: cover; 
-    opacity: 0.3; 
+    background-position: center 60%;
+    background-size: cover;
+    opacity: 0.3;
     z-index: 0;
   }
 
@@ -42,12 +41,11 @@ const Container = styled.div`
   }
 `;
 
-
 const Title = styled.h1`
   text-align: center;
   font-size: ${TitleXL};
   background: transparent;
-  color: #fff; 
+  color: #fff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0);
 
   @media (max-width: ${MobileBreakpoint}) {
@@ -59,7 +57,6 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: ${SpacingM};
-
 `;
 
 export default function Hero() {

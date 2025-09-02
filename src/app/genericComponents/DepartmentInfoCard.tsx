@@ -6,7 +6,6 @@ import {
   BodyTextMedium,
   MobileBreakpoint,
   Primary100,
-  Primary200,
   SpacingS,
   SpacingXS,
   TitleS,

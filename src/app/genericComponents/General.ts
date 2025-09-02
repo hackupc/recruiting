@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {
-  BackgroundAccent,
   BodyText,
   BodyTextMedium,
   MaxElement,
