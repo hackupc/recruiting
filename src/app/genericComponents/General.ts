@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {
+  BackgroundAccent,
   BodyText,
   BodyTextMedium,
   MaxElement,
@@ -35,7 +36,7 @@ export const TransparentBackground = styled.div`
 `;
 
 export const Background = styled(TransparentBackground)`
-  background: #1d1e3b;
+  background: ${BackgroundAccent};
 `;
 
 export const CardWithBorder = styled.div`
