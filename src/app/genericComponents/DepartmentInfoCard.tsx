@@ -6,7 +6,7 @@ import {
   BodyTextMedium,
   MobileBreakpoint,
   Primary100,
-  Primary200,
+  QuestionBoxBackgroundColor,
   SpacingS,
   SpacingXS,
   TitleS,
@@ -57,7 +57,7 @@ const Answer = styled.p<{ isVisible: boolean }>`
 
 const QuestionBox = styled.div`
   border-radius: ${SpacingS};
-  background-color: ${Primary200};
+  background-color: ${QuestionBoxBackgroundColor};
   padding: ${SpacingS};
   cursor: pointer;
 

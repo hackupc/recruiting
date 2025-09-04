@@ -12,9 +12,16 @@ import {
   SpacingS,
   SpacingXS,
   TitleM,
+  Primary300,
 } from "@/app/genericComponents/tokens";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
+const BorderedSection = styled(SectionContainer)`
+  border-radius: 10px;
+  border: 0.3333rem solid ${Primary300};
+  padding: ${SpacingM};
+`;
 
 const HeaderSocials = styled.a`
   font-size: ${TitleM};
@@ -56,9 +63,10 @@ const SocialItem = styled.div`
 
 export default function Socials() {
   return (
-    <SectionContainer>
+    <BorderedSection>
       <SectionTitle>{socials_data.title}</SectionTitle>
       <SocialsDescription>{socials_data.description}</SocialsDescription>
+
       <HeaderSocials href={"https://hackupc.com/"} target={"_blank"}>
         HackUPC
         <FontAwesomeIcon
@@ -67,6 +75,7 @@ export default function Socials() {
           style={{ marginLeft: "8px" }}
         />
       </HeaderSocials>
+
       <SocialsList>
         {socials_data.socialsHackUPC.map((social) => (
           <SocialItem key={social.label}>
@@ -81,6 +90,7 @@ export default function Socials() {
           </SocialItem>
         ))}
       </SocialsList>
+
       <HeaderSocials href={"https://hackersatupc.org/"} target={"_blank"}>
         Hackers@UPC{" "}
         <FontAwesomeIcon
@@ -89,6 +99,7 @@ export default function Socials() {
           style={{ marginLeft: "8px" }}
         />
       </HeaderSocials>
+
       <SocialsList>
         {socials_data.socialsHackersUPC.map((social) => (
           <SocialItem key={social.label}>
@@ -103,6 +114,6 @@ export default function Socials() {
           </SocialItem>
         ))}
       </SocialsList>
-    </SectionContainer>
+    </BorderedSection>
   );
 }
