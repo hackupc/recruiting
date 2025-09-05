@@ -58,7 +58,7 @@ const Title = styled.h1`
   @media (max-width: ${SmallMobileBreakpoint}) {
     font-size: ${MobileTitleL};
   }
-  `;
+`;
 
 const ButtonContainer = styled.div`
   display: flex;
