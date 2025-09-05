@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import {
+  SmallMobileBreakpoint,
   MobileBreakpoint,
   MobileTitleXL,
+  MobileTitleL,
+  SpacingS,
   SpacingM,
   SpacingXXL,
   TitleXL,
@@ -21,7 +24,7 @@ const Container = styled.div`
   overflow: hidden;
 
   @media (max-width: ${MobileBreakpoint}) {
-    padding: ${SpacingM};
+    padding: ${SpacingS};
   }
 
   &::before {
@@ -51,7 +54,11 @@ const Title = styled.h1`
   @media (max-width: ${MobileBreakpoint}) {
     font-size: ${MobileTitleXL};
   }
-`;
+
+  @media (max-width: ${SmallMobileBreakpoint}) {
+    font-size: ${MobileTitleL};
+  }
+  `;
 
 const ButtonContainer = styled.div`
   display: flex;
