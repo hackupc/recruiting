@@ -8,7 +8,6 @@ import {
 } from "./EmblaCarouselArrowButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import { ImageInformation } from "@data/interfaces";
-import Image from "next/image";
 
 type PropType = {
   slides: ImageInformation[];
