@@ -42,6 +42,8 @@ export const QuestionBoxBackgroundColor: string = "#304697";
 // Responsive breakpoints
 export const MobilePixels: number = 640;
 export const MobileBreakpoint: string = MobilePixels + "px";
+export const SmallMobilePixels: number = 370;
+export const SmallMobileBreakpoint: string = SmallMobilePixels + "px";
 export const MaxScreenSize: string = "1200px";
 
 // Spacing

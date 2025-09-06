@@ -8,7 +8,6 @@ import {
 } from "./EmblaCarouselArrowButtons";
 import useEmblaCarousel from "embla-carousel-react";
 import { ImageInformation } from "@data/interfaces";
-import Image from "next/image";
 
 type PropType = {
   slides: ImageInformation[];
@@ -33,12 +32,9 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           {slides.map((index) => (
             <div className="embla__slide" key={index.index}>
               <div>
-                <Image
+                <img
                   src={index.url}
                   alt={index.alt}
-                  width={800}
-                  height={600}
-                  priority
                   className="embla__slide__image"
                 />
               </div>
