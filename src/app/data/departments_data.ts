@@ -29,9 +29,9 @@ const departments_list_data: DepartmentInformation[] = [
   {
     name: "HackerXperience",
     question:
-      "Vols millorar els records que s’emporten els hackers de HackUPC? Ajuda’ns a crear la millor experiència que puguin tenir!",
+      "Vols millorar els records que s’emporten els hackers de HackUPC? Ajuda’ns a crear la millor experiència possible!",
     information:
-      "Volem que els hackers s’ho passin el millor possible a HackUPC! Des de l’inici al final de l’esdeveniment, planifiquem activitats, ens assegurem que hi ha un criteri just per avaluar tots els projectes, busquem mentors que ajudaran als hackers durant el cap de setmana, i molt més! Si ets creatiu i vols millorar l'experiència dels hackers, uneix-te a nosaltres!",
+      "A HackerXperience ens encarreguem que els participants gaudeixin de cada moment del cap de setmana. Planifiquem activitats perquè desconnectin, busquem mentors que els guiïn i ajudin, ens assegurem que els projectes es valorin de manera justa amb un bon equip de jutges, i molt més! Si ets creatiu, entusiasta i dinàmic, t'esperem a HackerXperience!",
     icon: faVolleyball,
   },
   {
@@ -39,7 +39,7 @@ const departments_list_data: DepartmentInformation[] = [
     question:
       "Treballes bé sota pressió? Ajuda’ns a fer que tot funcioni bé durant l’esdeveniment!",
     information:
-      "Durant HackUPC, tenim molts reptes pel que fa a la logística: oferir menjar (MOLT) pels hackers i tots els assistents a l'esdeveniment, i no només menjar, també marxandatge, un lloc on treballar, on dormir… tota la venue! El repte més gran és organitzar la cafeteria (perquè els hackers puguin menjar encara més), contactant amb partners i assegurant-nos de què tot està bé. Aquí és on entra l'equip de logistics, s’encarrega de resoldre i cobrir tots aquests reptes. Si ets una persona activa, estàs còmode treballant en equip i vols ser part d’aquesta bogeria, uneix-te a nosaltres!",
+      "Durant HackUPC, l'equip de logística s'encarrega de tot el que fa que l'esdeveniment sigui possible: des dels àpats per a més de 900 persones fins al marxandatge personalitzat que els hackers s'emporten a casa amb molt de carinyo. També transformem una aula en una cafeteria plena de snacks, cafès, begudes energètiques i alguna sorpresa extra, fins i tot espais per jugar a Jenga o als escacs! Tot això requereix una gran planificació i organització dels espais de la venue, i aquí és on entra l'equip de logística. Si ets una persona activa, t'agrada treballar en equip i vols viure aquesta bogeria amb nosaltres, uneix-te!",
     icon: faPizzaSlice,
   },
   {
