@@ -17,7 +17,6 @@ import {
   SpacingL,
   SpacingM,
   SpacingS,
-  SpacingXL,
   SpacingXS,
   TitleL,
   TitleXL,
