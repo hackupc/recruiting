@@ -21,7 +21,7 @@ const FirstBackground = styled(TransparentBackground)`
 
   @media (max-width: ${MobileBreakpoint}) {
     padding-top: ${SpacingS};
-    padding: ${SpacingM};
+    padding: ${SpacingM} ${SpacingS};
   }
 `;
 

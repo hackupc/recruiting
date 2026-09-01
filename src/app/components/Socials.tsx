@@ -51,10 +51,26 @@ const SocialsList = styled.div`
   gap: ${SpacingM};
   justify-content: center;
   padding: ${SpacingS};
+
+  @media (max-width: 640px) {
+    gap: ${SpacingS};
+  }
 `;
 
 const SocialItem = styled.div`
   text-align: center;
+
+  svg {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  @media (max-width: 640px) {
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
 
   &:hover {
     transform: scale(1.5);
