@@ -7,7 +7,6 @@ import {
   MobileBodyText,
   MobileBodyTextMedium,
   MobileBreakpoint,
-  MobileTitleL,
   MobileTitleM,
   Primary100,
   Primary300,
@@ -96,7 +95,7 @@ export const SectionTitle = styled.h2`
   text-align: center;
 
   @media (max-width: ${MobileBreakpoint}) {
-    font-size: ${MobileTitleL};
+    font-size: ${MobileTitleM};
     text-align: center;
   }
 `;

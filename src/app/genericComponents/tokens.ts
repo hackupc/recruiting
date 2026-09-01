@@ -9,8 +9,6 @@ export const BodyTextMedium: string = "16px";
 export const BodyTextSmall: string = "14px";
 
 // Mobile font sizes
-export const MobileTitleXL: string = "48px";
-export const MobileTitleL: string = "32px";
 export const MobileTitleM: string = "26px";
 export const MobileTitleS: string = "20px";
 export const MobileBodyText: string = "17px";

@@ -2,8 +2,6 @@ import styled from "styled-components";
 import {
   SmallMobileBreakpoint,
   MobileBreakpoint,
-  MobileTitleXL,
-  MobileTitleL,
   SpacingS,
   SpacingM,
   SpacingXXL,
