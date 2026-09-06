@@ -15,11 +15,7 @@ const EmblaCarousel: React.FC<PropType> = ({ slides }) => {
       <div className="marquee__track">
         {duplicatedSlides.map((slide, index) => (
           <div className="marquee__slide" key={`${slide.index}-${index}`}>
-            <img
-              src={slide.url}
-              alt={slide.alt}
-              className="marquee__image"
-            />
+            <img src={slide.url} alt={slide.alt} className="marquee__image" />
           </div>
         ))}
       </div>

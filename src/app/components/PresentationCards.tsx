@@ -25,9 +25,11 @@ const QuestionsList = styled.ul`
 
 function renderIntroduction(text: string, boldPhrases: string[]) {
   const phrasePattern = new RegExp(`(${boldPhrases.join("|")})`, "g");
-  return text.split(phrasePattern).map((part) =>
-    boldPhrases.includes(part) ? <strong key={part}>{part}</strong> : part,
-  );
+  return text
+    .split(phrasePattern)
+    .map((part) =>
+      boldPhrases.includes(part) ? <strong key={part}>{part}</strong> : part,
+    );
 }
 
 export default function PresentationCards() {

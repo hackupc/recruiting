@@ -122,7 +122,9 @@ export default function Hero() {
             {hero_data.applicationsOpenTextButton}
           </PrimaryButton>
         ) : (
-          <ClosedMessage>{hero_data.applicationsClosedTextButton}</ClosedMessage>
+          <ClosedMessage>
+            {hero_data.applicationsClosedTextButton}
+          </ClosedMessage>
         )}
       </ButtonContainer>
       <DiscoverMoreButton onClick={handleScrollToNextSection} type="button">

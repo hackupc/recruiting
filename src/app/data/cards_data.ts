@@ -127,7 +127,10 @@ export const about_joining_data_card: AboutJoiningInformation = {
   title: "💡 Què busquem?",
   introduction:
     "Busquem persones que aportin passió i continuitat a HackUPC, un projecte que es va iniciar fa més d'una dècada. Si alguna d'aquestes preguntes et ressona, t'encantarà formar part de l'equip de HackUPC:",
-  boldIntroductionPhrases: ["passió i continuitat a HackUPC", "més d'una dècada"],
+  boldIntroductionPhrases: [
+    "passió i continuitat a HackUPC",
+    "més d'una dècada",
+  ],
   questions: [
     "Ets treballador i t'agradaria entrar a un grup de persones motivades?",
     "Vols trobar un grup de persones amb qui compartir viatges, activitats, barbacoes, colònies i moltes altres experiències?",
