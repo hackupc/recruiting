@@ -12,7 +12,7 @@ import {
 const departments_list_data: DepartmentInformation[] = [
   {
     name: "🎨 Design",
-    question: "Dissenyes, o t’agradria aprendre dissenyar?",
+    question: "Dibuixes, dissenyes, o t’agradria aprendre dissenyar?",
     information:
       "🖌️ A HackUPC, el disseny és molt important perquè és la manera que tenim de comunicar i mostrar la nostra feina. Fa possible la connexió dels nostres esdeveniments amb Hackers, Sponsors i Partners. Com a membre de l’equip de disseny t'encarregaràs de treballar amb  tot el relacionat als diferents de l’associació, però sobretot el més important HackUPC. Pàgines web, material per xarxes socials, stickers, samarretes, decoració per l’esdeveniment… això i molt més és del que s’encarrega el nostre equip!",
     icon: faPenNib,
@@ -64,7 +64,7 @@ const departments_list_data: DepartmentInformation[] = [
 ];
 
 export const departments_data: Departments = {
-  title: "🧩 Els nostres departaments",
+  title: "Els nostres departaments",
   description:
     "🧭 A HackUPC, l'organització va per departaments. Cada departament té un objectiu específic al desenvolupament de l’esdeveniment, però ser part d’un departament no significa que només podràs fer feina d’aquell departament. Treballem també de forma molt horitzontal!",
   departments: departments_list_data,

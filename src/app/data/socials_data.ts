@@ -84,7 +84,7 @@ const listSocialsHackersUPC: SocialsItem[] = [
 ];
 
 export const socials_data: Socials = {
-  title: "📬 Estem en contacte!",
+  title: "Estem en contacte!",
   description:
     "💬 Si tens qualsevol dubte o pregunta, contacta amb nosaltres a través de qualsevol xarxa social.",
   socialsHackUPC: listSocialsHackUPC,

@@ -1,7 +1,7 @@
 import { Hackers } from "@data/interfaces";
 
 export const hackers_data: Hackers = {
-  title: "🏛️ L’associació darrere de HackUPC",
+  title: "L’associació darrere de HackUPC",
   subtitle:
     "Hackers@UPC és una organització sense ànim de lucre de la Universitat Politècnica de Catalunya.",
   description:
