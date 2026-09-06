@@ -1,6 +1,5 @@
 // Font sizes
 export const TitleXXL: string = "78px";
-export const TitleXL: string = "50px";
 export const HeroTitleXL: string = "64px";
 export const TitleL: string = "32px";
 export const TitleM: string = "26px";

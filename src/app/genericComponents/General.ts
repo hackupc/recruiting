@@ -19,7 +19,6 @@ import {
   SpacingS,
   SpacingXS,
   TitleL,
-  TitleXL,
 } from "@/app/genericComponents/tokens";
 
 export const TransparentBackground = styled.div`
