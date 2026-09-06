@@ -5,7 +5,7 @@ import { montserrat } from "@/app/genericComponents/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Join HackUPC team",
+  title: "🚀 Join HackUPC team",
   description: "Hackers@UPC organizers recruiting page",
   authors: { name: "Hackers@UPC", url: "https://hackersatupc.org/" },
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Join HackUPC team",
+    title: "🚀 Join HackUPC team",
     type: "website",
     siteName: "recruiting HackersUPC",
     locale: "en_GB",

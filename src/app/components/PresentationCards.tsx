@@ -13,8 +13,22 @@ import {
 } from "@data/cards_data";
 import EmblaCarousel from "@/app/genericComponents/EmblaCarousel";
 import { EmblaOptionsType } from "embla-carousel";
+import styled from "styled-components";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
+
+const QuestionsList = styled.ul`
+  margin: 0 0 2rem;
+  padding-left: 1.5rem;
+  line-height: 1.6667;
+`;
+
+function renderIntroduction(text: string, boldPhrases: string[]) {
+  const phrasePattern = new RegExp(`(${boldPhrases.join("|")})`, "g");
+  return text.split(phrasePattern).map((part) =>
+    boldPhrases.includes(part) ? <strong key={part}>{part}</strong> : part,
+  );
+}
 
 export default function PresentationCards() {
   return (
@@ -22,7 +36,18 @@ export default function PresentationCards() {
       <CardContainer>
         <CardWithBorder alignLeft>
           <CardTitle>{about_joining_data_card.title}</CardTitle>
-          <CardBody alignLeft>{about_joining_data_card.description}</CardBody>
+          <CardBody alignLeft>
+            {renderIntroduction(
+              about_joining_data_card.introduction,
+              about_joining_data_card.boldIntroductionPhrases,
+            )}
+          </CardBody>
+          <QuestionsList>
+            {about_joining_data_card.questions.map((question) => (
+              <li key={question}>{question}</li>
+            ))}
+          </QuestionsList>
+          <CardBody alignLeft>{about_joining_data_card.conclusion}</CardBody>
           <div style={{ marginTop: "2rem" }}>
             <EmblaCarousel
               slides={about_joining_data_card.images}

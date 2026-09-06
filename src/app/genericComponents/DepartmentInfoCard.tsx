@@ -1,104 +1,116 @@
 import styled, { css } from "styled-components";
-import { CardWithBackground } from "@/app/genericComponents/General";
 import { DepartmentInformation } from "@data/interfaces";
 import {
   BodyText,
   BodyTextMedium,
-  MobileBreakpoint,
-  Primary100,
-  QuestionBoxBackgroundColor,
   SpacingS,
-  SpacingXS,
-  TitleS,
 } from "@/app/genericComponents/tokens";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-const DepartmentCardTitle = styled.div`
-  font-size: ${TitleS};
-  text-transform: uppercase;
-  margin-top: ${SpacingS};
-  margin-bottom: ${SpacingS};
-  text-align: center;
-`;
-
-const Question = styled.div`
+const QuestionButton = styled.button<{ isActive: boolean }>`
+  width: 100%;
+  border: 0;
+  padding: ${SpacingS};
+  background: ${(props) =>
+    props.isActive ? "rgba(255, 255, 255, 0.12)" : "transparent"};
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
   font-size: ${BodyText};
-  font-weight: bold;
-  gap: ${SpacingXS};
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+  }
+
+  strong {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+
+  &:focus-visible {
+    outline: 0.15rem solid #ffffff;
+    outline-offset: -0.15rem;
+  }
 `;
 
-const Answer = styled.p<{ isVisible: boolean }>`
+const QuestionText = styled.span`
+  opacity: 0.5;
   font-size: ${BodyTextMedium};
-  transform-origin: top;
+`;
+
+const Answer = styled.div<{ isVisible: boolean }>`
+  font-size: ${BodyTextMedium};
   transition:
-    transform 0.5s ease,
-    opacity 0.5s ease;
-  transform: scaleY(0);
+    max-height 0.35s ease,
+    padding 0.35s ease,
+    opacity 0.35s ease;
+  max-height: 0;
   opacity: 0;
   line-height: 1.5rem;
-  height: 0;
-  visibility: hidden;
+  overflow: hidden;
   font-weight: normal;
+  margin: 0;
+  padding: 0 ${SpacingS};
 
   ${(props) =>
     props.isVisible &&
     css`
-      transform: scaleY(1);
+      max-height: 30rem;
       opacity: 1;
-      height: auto;
-      visibility: visible;
-      margin: ${SpacingS} 0;
+      padding: ${SpacingS};
+      border-top: 0.2rem solid #ffffff;
     `}
 `;
 
-const QuestionBox = styled.div`
-  border-radius: ${SpacingS};
-  background-color: ${QuestionBoxBackgroundColor};
-  padding: ${SpacingS};
-  cursor: pointer;
+const CardForDepartment = styled.div<{ $isActive: boolean }>`
+  width: 100%;
+  border: 0.1rem solid #ffffff;
+  border-radius: 0;
+  overflow: hidden;
+  background: ${(props) =>
+    props.$isActive ? "rgba(255, 255, 255, 0.12)" : "transparent"};
+
+  & + & {
+    border-top: 0;
+  }
 
   &:hover {
-    background-color: ${Primary100};
-  }
-`;
-
-const CardForDepartment = styled(CardWithBackground)`
-  width: 45%;
-
-  @media (max-width: ${MobileBreakpoint}) {
-    width: 100%;
+    background: ${(props) =>
+      props.$isActive ? "rgba(255, 255, 255, 0.16)" : "rgba(255, 255, 255, 0.06)"};
   }
 `;
 
 export default function DepartmentInfoCard(props: DepartmentInformation) {
-  const { name, question, information, icon } = props;
+  const { name, question, information } = props;
   const [active, setActive] = useState<boolean>(false);
+  const answerId = `${name.replace(/\W+/g, "-").toLowerCase()}-answer`;
 
   return (
-    <CardForDepartment>
-      <DepartmentCardTitle>
+    <CardForDepartment $isActive={active}>
+      <QuestionButton
+        type="button"
+        isActive={active}
+        aria-expanded={active}
+        aria-controls={answerId}
+        onClick={() => setActive(!active)}
+      >
+        <p>
+          <strong>{name}</strong>: <QuestionText>{question}</QuestionText>
+        </p>
         <FontAwesomeIcon
-          icon={icon}
-          size="lg"
-          style={{ marginRight: "16px" }}
-        />{" "}
-        {name}
-      </DepartmentCardTitle>
-
-      <QuestionBox onClick={() => setActive(!active)}>
-        <Question>
-          <p>{question}</p>
-          <FontAwesomeIcon
-            icon={active ? faChevronUp : faChevronDown}
-            color={"#FFFFFF"}
-          />
-        </Question>
-        <Answer isVisible={active}>{information}</Answer>
-      </QuestionBox>
+          icon={active ? faChevronUp : faChevronDown}
+          color={"#FFFFFF"}
+        />
+      </QuestionButton>
+      <Answer id={answerId} isVisible={active}>
+        {information}
+      </Answer>
     </CardForDepartment>
   );
 }

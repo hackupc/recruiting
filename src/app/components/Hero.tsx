@@ -5,7 +5,9 @@ import {
   SpacingS,
   SpacingM,
   SpacingXXL,
-  TitleXL,
+  BodyText,
+  BodyTextSmall,
+  HeroTitleXL,
 } from "@/app/genericComponents/tokens";
 import { hero_data } from "@data/hero_data";
 import { PrimaryButton } from "@/app/genericComponents/General";
@@ -47,13 +49,13 @@ const Container = styled.div`
 
 const Title = styled.h1`
   text-align: center;
-  font-size: ${TitleXL};
+  font-size: ${HeroTitleXL};
   background: transparent;
   color: #ffffff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0);
 
   @media (max-width: ${MobileBreakpoint}) {
-    font-size: 3.2rem;
+    font-size: ${HeroTitleXL};
     line-height: 1.08;
     width: 100%;
     margin: 0 auto;
@@ -64,7 +66,7 @@ const Title = styled.h1`
   }
 
   @media (max-width: ${SmallMobileBreakpoint}) {
-    font-size: 2.7rem;
+    font-size: ${HeroTitleXL};
   }
 `;
 
@@ -84,7 +86,7 @@ const ClosedMessage = styled.p`
   font-style: italic;
   text-align: center;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: ${BodyText};
 `;
 
 const DiscoverMoreButton = styled.button`
@@ -93,7 +95,7 @@ const DiscoverMoreButton = styled.button`
   border: none;
   background: transparent;
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: ${BodyTextSmall};
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -124,7 +126,7 @@ export default function Hero() {
         )}
       </ButtonContainer>
       <DiscoverMoreButton onClick={handleScrollToNextSection} type="button">
-        Discover more
+        👀 Discover more
       </DiscoverMoreButton>
     </Container>
   );

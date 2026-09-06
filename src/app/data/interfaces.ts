@@ -17,7 +17,10 @@ export type ImageInformation = {
 export interface AboutJoiningInformation {
   enabled: boolean;
   title: string;
-  description: string;
+  introduction: string;
+  boldIntroductionPhrases: string[];
+  questions: string[];
+  conclusion: string;
   images: ImageInformation[];
 }
 

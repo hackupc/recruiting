@@ -8,11 +8,9 @@ import DepartmentInfoCard from "@/app/genericComponents/DepartmentInfoCard";
 import styled from "styled-components";
 import { SpacingM } from "@/app/genericComponents/tokens";
 
-const DepartmentsCards = styled.div`
+const DepartmentsAccordion = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: ${SpacingM};
+  flex-direction: column;
   margin-top: ${SpacingM};
 `;
 
@@ -21,7 +19,7 @@ export default function Departments() {
     <SectionContainer id={"departments"}>
       <SectionTitle>{departments_data.title}</SectionTitle>
       <SectionDescription>{departments_data.description}</SectionDescription>
-      <DepartmentsCards>
+      <DepartmentsAccordion>
         {departments_data.departments.map((department) => (
           <DepartmentInfoCard
             key={department.name}
@@ -31,7 +29,7 @@ export default function Departments() {
             icon={department.icon}
           />
         ))}
-      </DepartmentsCards>
+      </DepartmentsAccordion>
     </SectionContainer>
   );
 }
