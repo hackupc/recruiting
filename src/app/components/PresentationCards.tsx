@@ -21,6 +21,7 @@ const QuestionsList = styled.ul`
   margin: 0 0 2rem;
   padding-left: 1.5rem;
   line-height: 1.6667;
+  text-align: left;
 `;
 
 function renderIntroduction(text: string, boldPhrases: string[]) {

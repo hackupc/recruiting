@@ -14,6 +14,8 @@ import { PrimaryButton } from "@/app/genericComponents/General";
 
 const Container = styled.div`
   position: relative;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
