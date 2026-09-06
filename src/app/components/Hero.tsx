@@ -8,6 +8,8 @@ import {
   BodyText,
   BodyTextSmall,
   HeroTitleXL,
+  MobileTitleM,
+  TitleL,
 } from "@/app/genericComponents/tokens";
 import { hero_data } from "@data/hero_data";
 import { PrimaryButton } from "@/app/genericComponents/General";
@@ -57,7 +59,7 @@ const Title = styled.h1`
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0);
 
   @media (max-width: ${MobileBreakpoint}) {
-    font-size: ${HeroTitleXL};
+    font-size: ${TitleL};
     line-height: 1.08;
     width: 100%;
     margin: 0 auto;
@@ -68,7 +70,7 @@ const Title = styled.h1`
   }
 
   @media (max-width: ${SmallMobileBreakpoint}) {
-    font-size: ${HeroTitleXL};
+    font-size: ${MobileTitleM};
   }
 `;
 
