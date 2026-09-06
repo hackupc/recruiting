@@ -17,6 +17,7 @@ import {
 } from "@/app/genericComponents/tokens";
 
 const FirstBackground = styled(TransparentBackground)`
+  min-width: 0;
   padding-top: ${SpacingS};
 
   @media (max-width: ${MobileBreakpoint}) {

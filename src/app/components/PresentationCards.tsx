@@ -19,11 +19,14 @@ import { BodyTextMedium } from "@/app/genericComponents/tokens";
 const OPTIONS: EmblaOptionsType = { loop: true };
 
 const QuestionsList = styled.ul`
+  width: 100%;
+  min-width: 0;
   margin: 0 0 2rem;
   padding-left: 1.5rem;
   line-height: 1.6667;
   text-align: left;
   font-size: ${BodyTextMedium};
+  overflow-wrap: anywhere;
 `;
 
 function renderIntroduction(text: string, boldPhrases: string[]) {

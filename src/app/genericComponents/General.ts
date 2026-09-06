@@ -41,11 +41,18 @@ interface CardWithBorderProps {
 }
 
 export const CardWithBorder = styled.div<CardWithBorderProps>`
+  width: 100%;
+  min-width: 0;
   padding: ${SpacingM};
   text-align: ${({ alignLeft }) => (alignLeft ? "left" : "center")};
   border-radius: ${SpacingS};
   display: grid;
   max-width: ${MaxElement};
+
+  > * {
+    min-width: 0;
+    max-width: 100%;
+  }
 
   @media (max-width: ${MobileBreakpoint}) {
     padding: ${SpacingS};
@@ -99,6 +106,8 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionContainer = styled.div`
+  width: 100%;
+  min-width: 0;
   max-width: ${MaxElement};
   margin: 0 auto;
 `;
