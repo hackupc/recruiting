@@ -14,7 +14,7 @@ const QuestionButton = styled.button<{ isActive: boolean }>`
   border: 0;
   padding: ${SpacingS};
   background: ${(props) =>
-    props.isActive ? "rgba(255, 255, 255, 0.12)" : "transparent"};
+    props.isActive ? "rgba(0, 0, 0, 0.18)" : "transparent"};
   color: inherit;
   cursor: pointer;
   text-align: left;
@@ -66,7 +66,6 @@ const Answer = styled.div<{ isVisible: boolean }>`
       max-height: 30rem;
       opacity: 1;
       padding: ${SpacingS};
-      border-top: 0.2rem solid #ffffff;
     `}
 `;
 
@@ -76,7 +75,7 @@ const CardForDepartment = styled.div<{ $isActive: boolean }>`
   border-radius: 0;
   overflow: hidden;
   background: ${(props) =>
-    props.$isActive ? "rgba(255, 255, 255, 0.12)" : "transparent"};
+    props.$isActive ? "rgba(0, 0, 0, 0.18)" : "transparent"};
 
   & + & {
     border-top: 0;
@@ -85,7 +84,7 @@ const CardForDepartment = styled.div<{ $isActive: boolean }>`
   &:hover {
     background: ${(props) =>
       props.$isActive
-        ? "rgba(255, 255, 255, 0.16)"
+        ? "rgba(0, 0, 0, 0.24)"
         : "rgba(255, 255, 255, 0.06)"};
   }
 `;

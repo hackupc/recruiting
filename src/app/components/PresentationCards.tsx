@@ -14,7 +14,11 @@ import {
 import EmblaCarousel from "@/app/genericComponents/EmblaCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import styled from "styled-components";
-import { BodyTextMedium } from "@/app/genericComponents/tokens";
+import {
+  MobileBodyTextMedium,
+  BodyTextMedium,
+  MobileBreakpoint,
+} from "@/app/genericComponents/tokens";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -26,6 +30,10 @@ const QuestionsList = styled.ul`
   line-height: 1.6667;
   text-align: left;
   font-size: ${BodyTextMedium};
+
+  @media (max-width: ${MobileBreakpoint}) {
+    font-size: ${MobileBodyTextMedium};
+  }
   overflow-wrap: anywhere;
 `;
 
