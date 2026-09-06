@@ -40,12 +40,14 @@ const QuestionButton = styled.button<{ isActive: boolean }>`
 `;
 
 const QuestionText = styled.span`
+  font-family: inherit;
   opacity: 0.5;
   font-size: ${BodyTextMedium};
 `;
 
 const Answer = styled.div<{ isVisible: boolean }>`
   font-size: ${BodyTextMedium};
+  font-family: inherit;
   transition:
     max-height 0.35s ease,
     padding 0.35s ease,

@@ -89,7 +89,7 @@ export const VideoContainer = styled.div`
 `;
 
 export const SectionTitle = styled.h2`
-  font-size: ${TitleXL};
+  font-size: ${TitleL};
   text-transform: uppercase;
   text-align: center;
 

@@ -14,6 +14,7 @@ import {
 import EmblaCarousel from "@/app/genericComponents/EmblaCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import styled from "styled-components";
+import { BodyTextMedium } from "@/app/genericComponents/tokens";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -22,6 +23,7 @@ const QuestionsList = styled.ul`
   padding-left: 1.5rem;
   line-height: 1.6667;
   text-align: left;
+  font-size: ${BodyTextMedium};
 `;
 
 function renderIntroduction(text: string, boldPhrases: string[]) {
