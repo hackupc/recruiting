@@ -91,7 +91,7 @@ export const VideoContainer = styled.div`
 export const SectionTitle = styled.h2`
   font-size: ${TitleL};
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 
   @media (max-width: ${MobileBreakpoint}) {
     font-size: ${MobileTitleM};
