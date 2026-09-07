@@ -92,7 +92,8 @@ const HeroBackground = styled(Image)`
 `;
 
 const HeroContent = styled.div`
-  position: static;
+  position: relative;
+  z-index: 1;
 `;
 
 const HeroImage = () => (
@@ -149,11 +150,12 @@ const ClosedMessage = styled.p`
   max-width: 24rem;
 `;
 
-const DiscoverMoreButton = styled.button`
+const DiscoverMoreButton = styled.a`
   display: none;
   position: absolute;
   bottom: 1.5rem;
   left: 50%;
+  z-index: 1;
   border: none;
   background: transparent;
   color: #ffffff;
@@ -207,11 +209,6 @@ export default function Hero() {
     return () => observer.disconnect();
   }, []);
 
-  const handleScrollToNextSection = () => {
-    const nextSection = document.getElementById("presentation-cards");
-    nextSection?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
-
   return (
     <Container ref={heroRef}>
       <HeroImage />
@@ -232,11 +229,11 @@ export default function Hero() {
             </ClosedMessage>
           )}
         </ButtonContainer>
-        <DiscoverMoreButton onClick={handleScrollToNextSection} type="button">
-          Discover more
-          <FontAwesomeIcon icon={faArrowDown} aria-hidden="true" />
-        </DiscoverMoreButton>
       </HeroContent>
+      <DiscoverMoreButton href="#presentation-cards">
+        Discover more
+        <FontAwesomeIcon icon={faArrowDown} aria-hidden="true" />
+      </DiscoverMoreButton>
     </Container>
   );
 }
