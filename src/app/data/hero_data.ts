@@ -5,5 +5,5 @@ export const hero_data: HeroInformation = {
   applicationsOpenTextButton: "Apunta’t ara! ✨",
   applicationsLink: "https://hackersatupc.typeform.com/to/yNU733vZ",
   applicationsClosedTextButton: "Les inscripcions estan tancades",
-  applicationsOpen: true,
+  applicationsOpen: false,
 };
