@@ -39,18 +39,18 @@ export default function Footer() {
           href={"https://legal.hackersatupc.org/hackupc/legal_notice"}
           target={"_blank"}
         >
-          Legal notice
+          ⚖️ Legal notice
         </LinkText>{" "}
         |{" "}
         <LinkText
           href={"https://legal.hackersatupc.org/hackupc/privacy_and_cookies"}
           target={"_blank"}
         >
-          Privacy and cookies
+          🔐 Privacy and cookies
         </LinkText>
       </div>
       <SecondLine>
-        <b>Made</b> with ❤ by{" "}
+        <b>✨ Made</b> with ❤ by{" "}
         <LinkText href={"https://hackersatupc.org/"} target={"_blank"}>
           Hackers@UPC
         </LinkText>
