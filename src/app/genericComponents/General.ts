@@ -4,7 +4,6 @@ import {
   BodyText,
   BodyTextMedium,
   MaxElement,
-  MobileBodyText,
   MobileBodyTextMedium,
   MobileBreakpoint,
   MobileTitleM,
@@ -37,14 +36,14 @@ export const Background = styled(TransparentBackground)`
 `;
 
 interface CardWithBorderProps {
-  alignLeft?: boolean;
+  $alignLeft?: boolean;
 }
 
 export const CardWithBorder = styled.div<CardWithBorderProps>`
   width: 100%;
   min-width: 0;
-  padding: ${SpacingM};
-  text-align: ${({ alignLeft }) => (alignLeft ? "left" : "center")};
+  padding: ${SpacingM} 0;
+  text-align: ${({ $alignLeft }) => ($alignLeft ? "left" : "center")};
   border-radius: ${SpacingS};
   display: grid;
   max-width: ${MaxElement};
@@ -55,7 +54,7 @@ export const CardWithBorder = styled.div<CardWithBorderProps>`
   }
 
   @media (max-width: ${MobileBreakpoint}) {
-    padding: ${SpacingS};
+    padding: ${SpacingS} 0;
     text-align: center;
   }
 `;
@@ -70,12 +69,12 @@ export const CardTitle = styled.h2`
 `;
 
 interface CardBodyProps {
-  alignLeft?: boolean;
+  $alignLeft?: boolean;
 }
 
 export const CardBody = styled.p<CardBodyProps>`
   font-size: ${BodyTextMedium};
-  text-align: ${({ alignLeft }) => (alignLeft ? "left" : "justify")};
+  text-align: ${({ $alignLeft }) => ($alignLeft ? "left" : "justify")};
   line-height: 1.6667;
   margin: 0 0 ${SpacingM};
 
@@ -112,12 +111,12 @@ export const SectionContainer = styled.div`
 `;
 
 export const SectionDescription = styled.p`
-  font-size: ${BodyText};
+  font-size: ${BodyTextMedium};
   text-align: justify;
   margin-top: ${SpacingXS};
 
   @media (max-width: ${MobileBreakpoint}) {
-    font-size: ${MobileBodyText};
+    font-size: ${MobileBodyTextMedium};
     text-align: justify;
     margin-top: ${SpacingXS};
   }

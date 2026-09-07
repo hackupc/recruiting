@@ -78,7 +78,7 @@ body {
   animation-duration: 40s;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .marquee__slide {
     width: min(72vw, 20rem);
   }

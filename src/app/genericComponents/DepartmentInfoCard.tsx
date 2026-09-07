@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
 import { DepartmentInformation } from "@data/interfaces";
 import {
-  BodyText,
   BodyTextMedium,
+  MobileBodyTextMedium,
+  MobileBreakpoint,
   SpacingS,
 } from "@/app/genericComponents/tokens";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,21 +18,32 @@ const QuestionButton = styled.button`
   cursor: pointer;
   text-align: left;
   font-family: "Montserrat", sans-serif;
-  font-size: ${BodyText};
+  font-size: ${BodyTextMedium};
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: ${SpacingS};
 
-  p {
+  > div {
     margin: 0;
     flex: 1;
+    min-width: 0;
   }
 
   strong {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     margin-right: ${SpacingS};
+
+    @media (max-width: ${MobileBreakpoint}) {
+      display: block;
+      margin-right: 0;
+    }
+  }
+
+  svg {
+    flex: 0 0 auto;
+    margin-top: 0.25rem;
   }
 
   &:focus-visible {
@@ -45,6 +56,16 @@ const QuestionText = styled.span`
   font-family: inherit;
   opacity: 0.5;
   font-size: ${BodyTextMedium};
+
+  @media (max-width: ${MobileBreakpoint}) {
+    display: block;
+    max-width: 32rem;
+    margin-top: 0.35rem;
+    font-size: ${MobileBodyTextMedium};
+    line-height: 1.45;
+    text-align: left;
+    text-wrap: pretty;
+  }
 `;
 
 const Answer = styled.div<{ isVisible: boolean }>`
@@ -58,15 +79,29 @@ const Answer = styled.div<{ isVisible: boolean }>`
   max-height: 0;
   opacity: 0;
   line-height: 1.5rem;
+  text-align: justify;
   overflow: hidden;
   font-weight: normal;
   margin: 0;
   padding: 0;
 
+  @media (max-width: ${MobileBreakpoint}) {
+    font-size: ${MobileBodyTextMedium};
+    line-height: 1.5;
+  }
+
+  p {
+    margin: 0 0 ${SpacingS};
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   ${(props) =>
     props.isVisible &&
     css`
-      max-height: 30rem;
+      max-height: 60rem;
       opacity: 1;
       padding: 0 0 ${SpacingS};
     `}
@@ -81,27 +116,57 @@ const CardForDepartment = styled.div`
   background: transparent;
 `;
 
-export default function DepartmentInfoCard(props: DepartmentInformation) {
-  const { name, question, information } = props;
-  const [active, setActive] = useState<boolean>(false);
+type DepartmentInfoCardProps = DepartmentInformation & {
+  active: boolean;
+  onToggle: () => void;
+};
+
+function renderBoldPhrases(text: string, phrases: string[]) {
+  if (phrases.length === 0) return text;
+
+  const escapedPhrases = phrases.map((phrase) =>
+    phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
+  );
+  const phrasePattern = new RegExp(`(${escapedPhrases.join("|")})`, "g");
+  return text
+    .split(phrasePattern)
+    .map((part, index) =>
+      phrases.includes(part) ? (
+        <strong key={`${part}-${index}`}>{part}</strong>
+      ) : (
+        part
+      ),
+    );
+}
+
+export default function DepartmentInfoCard(props: DepartmentInfoCardProps) {
+  const { name, question, information, boldInformationPhrases = [] } = props;
+  const { active, onToggle } = props;
   const answerId = `${name.replace(/\W+/g, "-").toLowerCase()}-answer`;
 
   return (
-    <CardForDepartment>
-      <QuestionButton
-        type="button"
-        aria-expanded={active}
-        aria-controls={answerId}
-        onClick={() => setActive(!active)}
-      >
-        <p>
-          <strong>{name}</strong> <QuestionText>{question}</QuestionText>
-        </p>
-        <FontAwesomeIcon icon={active ? faMinus : faPlus} color={"#FFFFFF"} />
-      </QuestionButton>
-      <Answer id={answerId} isVisible={active}>
-        {information}
-      </Answer>
-    </CardForDepartment>
+    <>
+      <CardForDepartment>
+        <QuestionButton
+          type="button"
+          aria-expanded={active}
+          aria-controls={answerId}
+          onClick={onToggle}
+        >
+          <div>
+            <strong>{name}</strong>
+            <QuestionText>{question}</QuestionText>
+          </div>
+          <FontAwesomeIcon icon={active ? faMinus : faPlus} color={"#FFFFFF"} />
+        </QuestionButton>
+        <Answer id={answerId} isVisible={active}>
+          {information.map((paragraph) => (
+            <p key={paragraph}>
+              {renderBoldPhrases(paragraph, boldInformationPhrases)}
+            </p>
+          ))}
+        </Answer>
+      </CardForDepartment>
+    </>
   );
 }

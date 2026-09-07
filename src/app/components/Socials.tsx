@@ -6,32 +6,54 @@ import {
 import { socials_data } from "@data/socials_data";
 import styled from "styled-components";
 import {
+  BodyTextMedium,
   Secondary100,
   Secondary500,
+  MobileBreakpoint,
   SpacingM,
   SpacingS,
   SpacingXS,
-  TitleM,
   Primary300,
 } from "@/app/genericComponents/tokens";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const BorderedSection = styled(SectionContainer)`
-  border-radius: 10px;
-  border: 0.3333rem solid ${Primary300};
+  border: 1px solid ${Primary300};
+  border-radius: ${SpacingS};
   padding: ${SpacingM};
+  background: rgba(47, 67, 114, 0.18);
+
+  @media (max-width: ${MobileBreakpoint}) {
+    padding: ${SpacingS};
+  }
+`;
+
+const SocialGroup = styled.div`
+  padding-top: ${SpacingM};
+
+  & + & {
+    margin-top: ${SpacingM};
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  @media (max-width: ${MobileBreakpoint}) {
+    padding-top: ${SpacingS};
+
+    & + & {
+      margin-top: ${SpacingS};
+    }
+  }
 `;
 
 const HeaderSocials = styled.a`
-  font-size: ${TitleM};
+  font-size: ${BodyTextMedium};
   font-weight: bold;
   text-decoration: none;
   color: ${Secondary100};
-  margin-top: ${SpacingM};
-  margin-bottom: ${SpacingXS};
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: ${SpacingXS};
   cursor: pointer;
 
   &:hover {
@@ -40,40 +62,51 @@ const HeaderSocials = styled.a`
 `;
 
 const SocialsDescription = styled(SectionDescription)`
-  text-align: center;
+  text-align: left;
   margin-bottom: ${SpacingM};
 `;
 
 const SocialsList = styled.div`
-  align-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: ${SpacingM};
-  justify-content: center;
-  padding: ${SpacingS};
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
+  gap: ${SpacingXS};
+  margin-top: ${SpacingS};
 
-  @media (max-width: 640px) {
-    gap: ${SpacingS};
+  @media (max-width: ${MobileBreakpoint}) {
+    grid-template-columns: repeat(4, 1fr);
   }
 `;
 
-const SocialItem = styled.div`
-  text-align: center;
+const SocialItem = styled.a`
+  display: flex;
+  min-height: 4.25rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: ${SpacingXS};
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: ${SpacingXS};
+  color: white;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
 
   svg {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 
-  @media (max-width: 640px) {
-    svg {
-      width: 2rem;
-      height: 2rem;
-    }
+  span {
+    font-size: 0.68rem;
+    opacity: 0.75;
   }
 
   &:hover {
-    transform: scale(1.5);
+    background: ${Primary300};
+    border-color: ${Secondary100};
+    transform: translateY(-0.15rem);
   }
 `;
 
@@ -83,53 +116,47 @@ export default function Socials() {
       <SectionTitle>{socials_data.title}</SectionTitle>
       <SocialsDescription>{socials_data.description}</SocialsDescription>
 
-      <HeaderSocials href={"https://hackupc.com/"} target={"_blank"}>
-        HackUPC
-        <FontAwesomeIcon
-          icon={faUpRightFromSquare}
-          size={"2xs"}
-          style={{ marginLeft: "8px" }}
-        />
-      </HeaderSocials>
-
-      <SocialsList>
-        {socials_data.socialsHackUPC.map((social) => (
-          <SocialItem key={social.label}>
-            <a
+      <SocialGroup>
+        <HeaderSocials href={"https://hackupc.com/"} target={"_blank"}>
+          HackUPC
+          <FontAwesomeIcon icon={faUpRightFromSquare} size={"2xs"} />
+        </HeaderSocials>
+        <SocialsList>
+          {socials_data.socialsHackUPC.map((social) => (
+            <SocialItem
+              key={social.label}
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.label}
             >
               <FontAwesomeIcon icon={social.icon} size="3x" />
-            </a>
-          </SocialItem>
-        ))}
-      </SocialsList>
+              <span>{social.label}</span>
+            </SocialItem>
+          ))}
+        </SocialsList>
+      </SocialGroup>
 
-      <HeaderSocials href={"https://hackersatupc.org/"} target={"_blank"}>
-        Hackers@UPC{" "}
-        <FontAwesomeIcon
-          icon={faUpRightFromSquare}
-          size={"2xs"}
-          style={{ marginLeft: "8px" }}
-        />
-      </HeaderSocials>
-
-      <SocialsList>
-        {socials_data.socialsHackersUPC.map((social) => (
-          <SocialItem key={social.label}>
-            <a
+      <SocialGroup>
+        <HeaderSocials href={"https://hackersatupc.org/"} target={"_blank"}>
+          Hackers@UPC
+          <FontAwesomeIcon icon={faUpRightFromSquare} size={"2xs"} />
+        </HeaderSocials>
+        <SocialsList>
+          {socials_data.socialsHackersUPC.map((social) => (
+            <SocialItem
+              key={social.label}
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.label}
             >
               <FontAwesomeIcon icon={social.icon} size="3x" />
-            </a>
-          </SocialItem>
-        ))}
-      </SocialsList>
+              <span>{social.label}</span>
+            </SocialItem>
+          ))}
+        </SocialsList>
+      </SocialGroup>
     </BorderedSection>
   );
 }

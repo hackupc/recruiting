@@ -19,7 +19,9 @@ export interface AboutJoiningInformation {
   title: string;
   introduction: string;
   boldIntroductionPhrases: string[];
+  boldConclusionPhrases: string[];
   questions: string[];
+  questionEmojis: string[];
   conclusion: string;
   images: ImageInformation[];
 }
@@ -35,7 +37,8 @@ export interface DepartmentInformation {
   name: string;
   icon: IconDefinition;
   question: string;
-  information: string;
+  information: string[];
+  boldInformationPhrases?: string[];
 }
 
 export interface Departments {

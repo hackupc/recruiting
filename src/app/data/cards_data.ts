@@ -126,20 +126,21 @@ export const about_joining_data_card: AboutJoiningInformation = {
   enabled: true,
   title: "Què busquem?",
   introduction:
-    "Busquem persones que aportin passió i continuitat a HackUPC, un projecte que es va iniciar fa més d'una dècada. Si alguna d'aquestes preguntes et ressona, t'encantarà formar part de l'equip de HackUPC:",
+    "Busquem integrants que aportin passió i continuitat a HackUPC, un projecte que es va iniciar fa més d'una dècada. T'encantarà formar part de l'equip de HackUPC si vols...",
   boldIntroductionPhrases: [
     "passió i continuitat a HackUPC",
     "més d'una dècada",
   ],
+  boldConclusionPhrases: ["et pot canviar la vida"],
   questions: [
-    "Ets treballador i t'agradaria entrar a un grup de persones motivades?",
-    "Vols trobar un grup de persones amb qui compartir viatges, activitats, barbacoes, colònies i moltes altres experiències?",
-    "Tens la creativitat per a resoldre problemes i aportar noves idees a l'equip?",
-    "Vols aprendre coses que no t'ensenyaran a la universitat?",
-    "Tens ganes de conèixer gent nova i fer amics per a tota la vida?",
+    "Entrar a un grup de persones treballadores i motivades",
+    "Compartir viatges, activitats, sopars, colònies...",
+    "Resoldre problemes i portar l'iniciativa",
+    "Aprendre coses que no t'ensenyaran a la universitat",
+    "Fer amics per a tota la vida",
   ],
-  conclusion:
-    "Si has respost afirmativament a alguna d'aquestes preguntes, no dubtis a unir-te a l'equip de HackUPC!",
+  questionEmojis: ["💪", "✈️", "💡", "🎓", "🤝"],
+  conclusion: "Organitzar HackUPC et pot canviar la vida. Encara dubtes?",
   images: images_for_joining,
 };
 
@@ -147,7 +148,7 @@ export const talk_data_card: VideoCardInformation = {
   enabled: true,
   title: "Xerrada sobre ser organitzador de HackUPC",
   description:
-    "🎙️ Descobreix el que de veritat significa ser part de Hackers@UPC en aquesta xerrada dels directors de l’edició de 2023! Expliquen més en profunditat cada departament, l’experiència de HackUPC i les altres activitats que s’organitzen durant l’any.",
+    "Descobreix el que de veritat significa ser part de Hackers@UPC en aquesta xerrada dels directors de l’edició de 2023! Expliquen més en profunditat cada departament, l’experiència de HackUPC i les altres activitats que s’organitzen durant l’any.",
   video: "/videos/joinTeam.mp4",
 };
 
@@ -155,6 +156,6 @@ export const trailer_data_card: VideoCardInformation = {
   enabled: true,
   title: "Què significa ser part de Hackers@UPC?",
   description:
-    "🤩 Ser part de Hackers@UPC significa treballar i cooperar amb altra gent, tenir reunions de forma regular, ser constants i ser capaç de treballar sota pressió. Sense passió i dedicació per part dels organitzadors, HackUPC no podria tirar endavant! Al final del dia, veure als hackers contents i veient com tenen un cap de setmana increïble, alguns cops amb experiències que els canvien la vida, fa que tot valgui la pena! També fem moltes activitats com a grup, i aporta una bona xarxa de contactes.",
+    "A HackUPC, la passió i la dedicació és molt important! Però això no és tot, també fem moltes activitats grupals, que construeixen un equip cohesionat.",
   video: "/videos/trailer.mp4",
 };

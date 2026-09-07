@@ -38,7 +38,7 @@ export const BackgroundAccent: string = "#1d1e3b";
 export const QuestionBoxBackgroundColor: string = "#304697";
 
 // Responsive breakpoints
-export const MobilePixels: number = 640;
+export const MobilePixels: number = 768;
 export const MobileBreakpoint: string = MobilePixels + "px";
 export const SmallMobilePixels: number = 370;
 export const SmallMobileBreakpoint: string = SmallMobilePixels + "px";
