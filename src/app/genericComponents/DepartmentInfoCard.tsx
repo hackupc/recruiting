@@ -17,7 +17,7 @@ const QuestionButton = styled.button`
   color: inherit;
   cursor: pointer;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: inherit;
   font-size: ${BodyTextMedium};
   display: flex;
   align-items: flex-start;
@@ -31,7 +31,7 @@ const QuestionButton = styled.button`
   }
 
   strong {
-    font-family: "Montserrat", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     margin-right: ${SpacingS};
 
