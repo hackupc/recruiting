@@ -135,7 +135,7 @@ export const about_joining_data_card: AboutJoiningInformation = {
   questions: [
     "Entrar a un grup de persones treballadores i motivades",
     "Compartir viatges, activitats, sopars, colònies...",
-    "Resoldre problemes i portar l'iniciativa",
+    "Resoldre problemes i portar la iniciativa",
     "Aprendre coses que no t'ensenyaran a la universitat",
     "Fer amics per a tota la vida",
   ],
