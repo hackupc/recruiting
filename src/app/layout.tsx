@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Join HackUPC team",
+    title: "🚀 Join HackUPC team",
     type: "website",
     siteName: "recruiting HackersUPC",
     locale: "en_GB",

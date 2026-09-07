@@ -8,7 +8,7 @@ import {
 import Hackers from "@components/Hackers";
 import Socials from "@components/Socials";
 import Footer from "@components/Footer";
-import PresentationCards from "@components/PresentationCards";
+import PresentationCards, { VideoCards } from "@components/PresentationCards";
 import styled from "styled-components";
 import {
   MobileBreakpoint,
@@ -17,11 +17,11 @@ import {
 } from "@/app/genericComponents/tokens";
 
 const FirstBackground = styled(TransparentBackground)`
-  padding-top: ${SpacingS};
+  min-width: 0;
+  padding: ${SpacingS} ${SpacingM} 0;
 
   @media (max-width: ${MobileBreakpoint}) {
-    padding-top: ${SpacingS};
-    padding: ${SpacingM};
+    padding: ${SpacingM} ${SpacingS} 0;
   }
 `;
 
@@ -35,6 +35,9 @@ export default function HomePage() {
       <Background>
         <Departments />
       </Background>
+      <TransparentBackground>
+        <VideoCards />
+      </TransparentBackground>
       <TransparentBackground>
         <Hackers />
       </TransparentBackground>

@@ -124,9 +124,23 @@ const images_for_joining: ImageInformation[] = [
 
 export const about_joining_data_card: AboutJoiningInformation = {
   enabled: true,
-  title: "Per què hauria d’apuntar-me a Hackers@UPC?",
-  description:
-    "Ser part de l’equip de Hackers@UPC et donarà moltes experiències i et permetrà enfrontar-te a nous reptes. Tindràs l'oportunitat de conèixer i treballar amb un equip de gent apassionada, aprendràs noves habilitats i ajudaràs a fer créixer la comunitat a través de l'organització d’esdeveniments increïbles que apropen a la gent! Ser part d’una associació universitària com Hackers@UPC et farà viure la teva vida universitària d’una forma més divertida.",
+  title: "Què busquem?",
+  introduction:
+    "Busquem integrants que aportin passió i continuitat a HackUPC, un projecte que es va iniciar fa més d'una dècada. T'encantarà formar part de l'equip de HackUPC si vols...",
+  boldIntroductionPhrases: [
+    "passió i continuitat a HackUPC",
+    "més d'una dècada",
+  ],
+  boldConclusionPhrases: ["et pot canviar la vida"],
+  questions: [
+    "Entrar a un grup de persones treballadores i motivades",
+    "Compartir viatges, activitats, sopars, colònies...",
+    "Resoldre problemes i portar l'iniciativa",
+    "Aprendre coses que no t'ensenyaran a la universitat",
+    "Fer amics per a tota la vida",
+  ],
+  questionEmojis: ["💪", "✈️", "💡", "🎓", "🤝"],
+  conclusion: "Organitzar HackUPC et pot canviar la vida. Encara dubtes?",
   images: images_for_joining,
 };
 
@@ -142,6 +156,6 @@ export const trailer_data_card: VideoCardInformation = {
   enabled: true,
   title: "Què significa ser part de Hackers@UPC?",
   description:
-    "Ser part de Hackers@UPC significa treballar i cooperar amb altra gent, tenir reunions de forma regular, ser constants i ser capaç de treballar sota pressió. Sense passió i dedicació per part dels organitzadors, HackUPC no podria tirar endavant! Al final del dia, veure als hackers contents i veient com tenen un cap de setmana increïble, alguns cops amb experiències que els canvien la vida, fa que tot valgui la pena! També fem moltes activitats com a grup, i aporta una bona xarxa de contactes.",
+    "A HackUPC, la passió i la dedicació és molt important! Però això no és tot, també fem moltes activitats grupals, que construeixen un equip cohesionat.",
   video: "/videos/trailer.mp4",
 };
