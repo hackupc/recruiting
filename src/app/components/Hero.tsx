@@ -156,7 +156,11 @@ const DiscoverMoreButton = styled.button`
   white-space: nowrap;
 
   svg {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
     margin-left: 0.5rem;
+    vertical-align: middle;
     animation: discover-arrow 1.5s ease-in-out infinite;
   }
 
