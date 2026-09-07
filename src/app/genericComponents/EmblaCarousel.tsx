@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { EmblaOptionsType } from "embla-carousel";
 import { ImageInformation } from "@data/interfaces";
 
@@ -15,7 +16,14 @@ const EmblaCarousel: React.FC<PropType> = ({ slides }) => {
       <div className="marquee__track">
         {duplicatedSlides.map((slide, index) => (
           <div className="marquee__slide" key={`${slide.index}-${index}`}>
-            <img src={slide.url} alt={slide.alt} className="marquee__image" />
+            <Image
+              src={slide.url}
+              alt={slide.alt}
+              fill
+              sizes="(max-width: 444px) 72vw, 320px"
+              quality={65}
+              className="marquee__image"
+            />
           </div>
         ))}
       </div>

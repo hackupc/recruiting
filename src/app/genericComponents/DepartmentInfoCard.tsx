@@ -43,6 +43,8 @@ const QuestionButton = styled.button`
 
   svg {
     flex: 0 0 auto;
+    width: 1rem;
+    height: 1rem;
     margin-top: 0.25rem;
   }
 

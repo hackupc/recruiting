@@ -51,6 +51,11 @@ const CardsForHackers = styled(CardWithBackground)`
 
 const ButtonContainer = styled.div`
   display: flex;
+
+  svg {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
 `;
 
 export default function Hackers() {

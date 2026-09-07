@@ -56,6 +56,11 @@ const HeaderSocials = styled.a`
   gap: ${SpacingXS};
   cursor: pointer;
 
+  svg {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+
   &:hover {
     color: ${Secondary500};
   }

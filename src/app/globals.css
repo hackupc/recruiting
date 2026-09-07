@@ -52,15 +52,15 @@ body {
 }
 
 .marquee__slide {
+  position: relative;
   flex: 0 0 auto;
   width: min(26vw, 20rem);
+  height: min(26vw, 20rem);
   padding-right: 0;
 }
 
 .marquee__image {
   display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 0;
 }
@@ -81,5 +81,6 @@ body {
 @media (max-width: 768px) {
   .marquee__slide {
     width: min(72vw, 20rem);
+    height: min(72vw, 20rem);
   }
 }

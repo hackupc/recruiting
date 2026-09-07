@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import {
   SmallMobileBreakpoint,
   MobileBreakpoint,
@@ -77,23 +78,33 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("/IMG_6219.jpeg");
-    background-position: center;
-    background-size: cover;
-    opacity: 0.3;
-    z-index: 0;
-  }
-
-  > * {
-    position: relative;
-    z-index: 1;
-  }
 `;
+
+const HeroBackground = styled(Image)`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.3;
+  z-index: 0;
+`;
+
+const HeroContent = styled.div`
+  position: static;
+`;
+
+const HeroImage = () => (
+  <HeroBackground
+    src="/IMG_6219.jpeg"
+    alt=""
+    fill
+    priority
+    quality={60}
+    sizes="100vw"
+  />
+);
 
 const Title = styled.h1`
   text-align: center;
@@ -203,26 +214,29 @@ export default function Hero() {
 
   return (
     <Container ref={heroRef}>
-      <Title>{hero_data.title}</Title>
-      <ButtonContainer>
-        {hero_data.applicationsOpen ? (
-          <HeroButton
-            $floating={isHeroScrolledPast}
-            href={hero_data.applicationsLink}
-            target={"_blank"}
-          >
-            {hero_data.applicationsOpenTextButton}
-          </HeroButton>
-        ) : (
-          <ClosedMessage>
-            {hero_data.applicationsClosedTextButton}
-          </ClosedMessage>
-        )}
-      </ButtonContainer>
-      <DiscoverMoreButton onClick={handleScrollToNextSection} type="button">
-        Discover more
-        <FontAwesomeIcon icon={faArrowDown} aria-hidden="true" />
-      </DiscoverMoreButton>
+      <HeroImage />
+      <HeroContent>
+        <Title>{hero_data.title}</Title>
+        <ButtonContainer>
+          {hero_data.applicationsOpen ? (
+            <HeroButton
+              $floating={isHeroScrolledPast}
+              href={hero_data.applicationsLink}
+              target={"_blank"}
+            >
+              {hero_data.applicationsOpenTextButton}
+            </HeroButton>
+          ) : (
+            <ClosedMessage>
+              {hero_data.applicationsClosedTextButton}
+            </ClosedMessage>
+          )}
+        </ButtonContainer>
+        <DiscoverMoreButton onClick={handleScrollToNextSection} type="button">
+          Discover more
+          <FontAwesomeIcon icon={faArrowDown} aria-hidden="true" />
+        </DiscoverMoreButton>
+      </HeroContent>
     </Container>
   );
 }
